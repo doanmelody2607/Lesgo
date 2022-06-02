@@ -1,5 +1,6 @@
 :root {
-    --primary-color: linear-gradient(180deg, #267CE8 0%, #4E9FFF 100%);;
+    --primary-color: linear-gradient(180deg, #267CE8 0%, #4E9FFF 100%);
+    --blue-color: #2C6BDC;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
@@ -86,16 +87,17 @@ html {
 
 /* BUTTON */
 .btn {
-    min-width: 124px;
-    height: 34px;
+    min-width: 300px;
+    height: 50px;
     text-decoration: none;
     border: none;
     outline: none;
     border-radius: 4px;
-    font-size: 1.5rem;
-    color: var(--text-color);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--blue-color);
     background-color: #fff;
-    padding: 0 14px;
+    padding: 0 20px;
     cursor: pointer;
     display: inline-flex;
     justify-content: center;
@@ -109,7 +111,8 @@ html {
 }
 
 .btn.btn--normal:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background: var(--primary-color);
+    color: var(--white-color);
 }
 
 .btn.btn--primary {
@@ -226,4 +229,15 @@ html {
     height: var(--height);
     line-height: var(--height);
     text-align: center;
+}
+
+
+.heading-text {
+    line-height: 80px;
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+    background: linear-gradient(180deg, #2D51CA 0%, #2C82ED 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
