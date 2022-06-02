@@ -85,9 +85,17 @@ html {
     animation: growthOfModal linear 0.2s;
 }
 
+.mt-48 {
+    margin-top: 48px;
+}
+
+.text-center {
+    text-align: center;
+}
+
 /* BUTTON */
 .btn {
-    min-width: 300px;
+    min-width: 250px;
     height: 50px;
     text-decoration: none;
     border: none;
@@ -105,9 +113,15 @@ html {
 }
 
 .btn--size-s {
+    min-width: unset;
     height: 32px;
     font-size: 1.2rem;
-    padding: 0 8px;
+    padding: 0 40px;
+}
+
+.btn.btn--normal {
+    color: #2C6BDC;
+    border: 0.5px solid rgba(78, 159, 255, 0.5);
 }
 
 .btn.btn--normal:hover {
@@ -118,6 +132,10 @@ html {
 .btn.btn--primary {
     color: var(--white-color);
     background: var(--primary-color);
+}
+
+.btn.btn--primary:hover {
+    opacity: 0.8;
 }
 
 .btn.btn--visible {
@@ -234,7 +252,7 @@ html {
 
 .heading-text {
     line-height: 80px;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 800;
     letter-spacing: 0.3rem;
     background: linear-gradient(180deg, #2D51CA 0%, #2C82ED 100%);
