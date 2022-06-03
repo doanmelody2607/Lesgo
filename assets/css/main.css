@@ -307,7 +307,7 @@
 
 .search__suggest-text {
     color: var(--white-color);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     cursor: pointer;
     opacity: 0.8;
     position: relative;
@@ -389,7 +389,7 @@
 }
 
 .container__category-title {
-    padding: 0;
+    padding: 0 12px;
     margin: 10px 0 0 0;
     font-size: 1.4rem;
     color: #2C6BDC;
@@ -469,16 +469,18 @@
 
 /* TOUR GUIDE */
 .container__guide {
-    padding: 60px 24px;
+    padding: 60px 24px 0;
 }
 
 .container__guide-card {
     display: block;
+    width: 100%;
     text-decoration: none;
     background-color: var(--white-color);
     margin-top: 24px;
     position: relative;
-    border-radius: 3px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
     transition: transform linear 0.1s;
     will-change: transform;
@@ -490,12 +492,13 @@
 }
 
 .container__guide__img {
+    width: 100%;
     padding-top: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left center;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    background-position: center;
+    border-radius: 8px;
+    
 }
 
 .container__guide__name {
@@ -515,8 +518,7 @@
 .container__guide-achievement {
     display: flex;
     justify-content: space-between;
-    margin: 10px 10px
-    
+    margin: 10px 10px 0;
 }
 
 .container__guide-trip {
@@ -533,8 +535,8 @@
 }
 
 .container__guide-evaluate--number {
-    margin-left: 10px;
-    font-size: 1.4rem;
+    margin: 10px;
+    font-size: 1.2rem;
     color: red;
 }
 
@@ -621,15 +623,93 @@ i.container__guide__liked-icon {
     text-align: center;
 }
 
-.join-event {
+.lesgo__join {
     padding-top: 23%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left center;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
 }
 
-.join-event__img {
+.lesgo__join-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 150px;
+}
+
+.lesgo__join-title {
+    font-size: 6rem;
+    font-weight: 900;
+    margin: 12px 0;
+}
+
+.lesgo__join-desc {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    letter-spacing: 0.1rem;
+}
+
+/* NEWS */
+.container__news {
+    padding: 60px 24px;
+}
+
+.container__news-card {
+    display: block;
     width: 100%;
+    text-decoration: none;
+    background-color: var(--white-color);
+    margin-top: 24px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    transition: transform linear 0.1s;
+    will-change: transform;
+}
+
+.container__news-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.container__news-img {
+    padding-top: 40%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 8px;
+    
+}
+
+.container__news-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--blue-color);
+    line-height: 1.8rem;
+    margin: 10px 10px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+
+.container__news-desc {
+    margin: 10px;
+    color: var(--text-color);
+    font-size: 1.3rem;
 }
