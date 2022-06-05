@@ -37,6 +37,15 @@
     justify-content: space-between;   
 }
 
+.navbar__bar {
+    display: none;
+}
+
+.navbar__bar-icon {
+    color: #2D51CA;
+    font-size: 2.5rem;
+}
+
 .navbar__logo {
     cursor: pointer;
 }
@@ -46,10 +55,21 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__menu-item {
     
 }
 
-.navbar__middle-category {
+.navbar__menu-item a {
+    text-decoration: none;
     margin-right: 30px;
     font-size: 1.8rem;
     font-weight: 700;
@@ -58,20 +78,19 @@
     cursor: pointer;
 }
 
-
-.navbar__middle-category::after {
+.navbar__menu-item a::after {
     content: "";
     display: block;
     height: 25px;
     border-left: 1px solid #4E9FFF;
     position: absolute;
     right: -13px;
-    top: 23px;
-    transform: translateY(-50%)
+    top: 10px;
+    transform: translateY(-50%);
 }
 
 .navbar__middle-btn:hover,
-.navbar__middle-category:hover {
+.navbar__menu-item:hover a {
     opacity: 0.8;
 }
 
@@ -333,6 +352,10 @@
 }
 
 /* APP CONTAINER */
+#app__container {
+
+}
+
 .container {
     background-color: #fff;
     border: 1px solid #E5E5E5;
@@ -345,10 +368,6 @@
     background-color: #fff;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
-}
-
-.container__banner-wrapper {
-
 }
 
 .container__banner-img {
@@ -469,7 +488,7 @@
 
 /* TOUR GUIDE */
 .container__guide {
-    padding: 60px 24px 0;
+    padding: 60px 24px;
 }
 
 .container__guide-card {
@@ -491,7 +510,7 @@
     box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
-.container__guide__img {
+.container__guide-img {
     width: 100%;
     padding-top: 100%;
     background-repeat: no-repeat;
@@ -501,8 +520,8 @@
     
 }
 
-.container__guide__name {
-    font-size: 1.5rem;
+.container__guide-name {
+    font-size: 1.3rem;
     font-weight: bold;
     color: var(--blue-color);
     line-height: 1.8rem;
@@ -519,6 +538,7 @@
     display: flex;
     justify-content: space-between;
     margin: 10px 10px 0;
+    font-size: 0.9rem;
 }
 
 .container__guide-trip {
@@ -526,6 +546,7 @@
 }
 
 .container__guide-country {
+    font-weight: 600;
     color: var(--text-color);
 }
 
@@ -623,6 +644,7 @@ i.container__guide__liked-icon {
     text-align: center;
 }
 
+/* LESGO JOIN POSTER */
 .lesgo__join {
     padding-top: 23%;
     background-repeat: no-repeat;
@@ -650,7 +672,7 @@ i.container__guide__liked-icon {
 }
 
 .lesgo__join-title {
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 900;
     margin: 12px 0;
 }
@@ -660,6 +682,130 @@ i.container__guide__liked-icon {
     line-height: 1.6;
     letter-spacing: 0.1rem;
 }
+
+/* CONTAINER 2ND */
+.container.second {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* TOURS & COMBO */
+.container__tours {
+    padding: 60px 24px 0;
+}
+
+.container__tours-card {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    background-color: var(--white-color);
+    margin-top: 24px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    transition: transform linear 0.1s;
+    will-change: transform;
+}
+
+.container__tours-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.container__tours-img {
+    width: 100%;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    
+}
+
+.container__tours-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--blue-color);
+    line-height: 1.8rem;
+    margin: 10px 10px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+
+.container__tours-achievement {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 0;
+    font-size: 0.9rem;
+}
+
+.container__tours-trip {
+    color: var(--blue-color);
+}
+
+.container__tours-country {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.container__tours-evaluate {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container__tours-evaluate--number {
+    margin: 10px;
+    font-size: 1.2rem;
+    color: red;
+}
+
+.container__tours__action {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 0;
+}
+
+.container__tours__like {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+i.container__tours__liked-icon {
+    color: #f63d30;
+    display: none;
+}
+
+.container__tours__like-liked .container__tours__unlike-icon {
+    display: none;
+}
+
+.container__tours__like-liked .container__tours__liked-icon {
+    display: inline-block;
+}
+
+.container__tours__rating {
+    font-size: 1rem;
+    transform: scale(0.7);
+    transform-origin: right;
+    color: #d5d5d5;
+    margin-left: auto;
+}
+
+.container__tours__star-gold {
+    color: var(--star-gold-color);
+}
+
+.container__tours__sold {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-left: 6px;
+}
+
 
 /* NEWS */
 .container__news {
@@ -713,3 +859,4 @@ i.container__guide__liked-icon {
     color: var(--text-color);
     font-size: 1.3rem;
 }
+
