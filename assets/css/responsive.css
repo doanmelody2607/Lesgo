@@ -5,6 +5,10 @@
         overflow: hidden;
     }
 
+    .header__navbar {
+        height: unset;
+    }
+
     .navbar__bar {
         display: block;
     }
@@ -24,6 +28,13 @@
     
     .seacrh__layout-wrapper {
         padding: 0 24px;
+    }
+
+    .container__places-box,
+    .container__news-card,
+    .container__guide-card,
+    .container__tours-card {
+        margin-top: 16px;
     }
 }
 
@@ -140,11 +151,6 @@
         top: 13px;
         left: 0;
         /* transform: translateY(100%) */
-    }
-
-    .container__guide-card,
-    .container__tours-card {
-        margin-top: 8px;
     }
 
     .lesgo__join {
