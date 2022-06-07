@@ -36,6 +36,15 @@
     .container__tours-card {
         margin-top: 16px;
     }
+
+    .guide__information-wrapper {
+        flex-direction: column;
+    }
+
+    .guide__option {
+        text-align: center;
+        margin: 0;
+    }
 }
 
 /* TABLET */
@@ -55,6 +64,15 @@
 
     .btn--size-s {
         padding: 0 20px;
+    }
+
+    .guide__img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .guide__introduce {
+        margin-top: 250px;
     }
 }
 
@@ -118,7 +136,7 @@
     }
 
     .heading-text {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .partner__flc img,
@@ -173,5 +191,36 @@
     .lesgo__join-title {
         font-size: 1.5rem;
         margin: 6px;
+    }
+
+    .guide__img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .guide__btn {
+        min-width: 120px;
+        height: 30px;
+    }
+
+    .guide__introduce {
+        margin-top: 200px;
+    }
+
+    .guide__menu-item a {
+        font-size: 1.3rem;
+    }
+
+    .guide__introduce-title h3 {
+        font-size: 1.5rem;
+    }
+    
+    .guide__introduce-desc {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    .guide__service-title {
+        font-size: 1.4rem;
     }
 }

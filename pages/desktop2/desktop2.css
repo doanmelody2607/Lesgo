@@ -1,18 +1,30 @@
+.container__banner {
+    z-index: 1;
+}
+
 .container__banner-img {
     width: 100%;
 }
 
 .guide__information {
+    z-index: 10;
     padding: 0 24px;
-    margin-top: 24px;
-    position: relative;
-}
-
-.guide__avatar {
+    margin-top: 24px;   
     position: absolute;
-    top: -80px;
+    top: -100px;
+    right: 0;
+    left: 0;
 }
 
+.guide__information-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.guide__option {
+    margin-top: 100px;
+    margin-left: 24px;
+}
 
 .guide__name {
     font-size: 2.4rem;
@@ -45,7 +57,7 @@
 .guide__menu-item--separate::after {
     content: "";
     display: block;
-    height: 24px;
+    height: 20px;
     width: 1px;
     background: linear-gradient(180deg, #DA0710 0%, #CA0009 100%);
     position: absolute;
@@ -66,7 +78,8 @@
 
 /* GUIDE INTRODUCE */
 .guide__introduce {
-    margin-top: 24px;
+    margin-top: 180px;
+    padding: 60px 24px 0;
 }
 
 .guide__introduce-title {
@@ -81,13 +94,19 @@
 }
 
 .guide__introduce-desc {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 2rem;
 }
 
 /* GUIDE SERVICE */
 .guide__service {
+    display: flex;
+    align-items: center;
+}
 
+
+.row.trafic {
+    margin-top: 24px;
 }
 
 .guide__service-symbol {
@@ -103,14 +122,26 @@
     position: absolute;
     top: 0px;
     right: -18px;
-    border-width: 9px 11px;
+    border-width: 7px 9px;
     border-style: solid;
     border-color: transparent transparent transparent #2D61D5;
 }
 
+.guide__service-title {
+    font-size: 1.6rem;
+    margin-left: 16px;
+    font-weight: 600;
+}
+
 /* CONTAINER PLACES */
+
+.container {
+    border-radius: 8px;
+    position: relative;
+}
+
 .container__places {
-    padding: 60px 24px;
+    padding: 60px 24px 0;
 }
 
 .container__places-heading {
@@ -144,7 +175,7 @@
 
 /* NEWS */
 .container__news {
-    padding: 60px 24px;
+    padding: 60px 24px 0;
 }
 
 .container__news-card {
@@ -193,4 +224,50 @@
     margin: 10px;
     color: var(--text-color);
     font-size: 1.3rem;
+}
+
+
+.evaluate__action {
+    margin-top: 16px;
+}
+
+.evaluate__action img {
+    width: 30px;
+    height: 25px;
+}
+
+.container__evaluate {
+    padding: 60px 24px;
+}
+
+.container__evalutate-comment {
+    margin-top: 48px;
+}
+
+.comment__user {
+    display: flex;
+    align-items: center;
+}
+
+.comment__user-img {
+    width: 60px;
+    height: 60px;
+}
+
+.comment__user-info {
+    margin-left: 16px;
+}
+
+.comment__user-name {
+    margin: 14px 0 0;
+    font-size: 1.8rem;
+}
+
+.comment__user-date {
+    font-size: 1.4rem;
+}
+
+.comment__user-content {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
 }

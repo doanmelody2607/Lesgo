@@ -85,6 +85,9 @@ html {
     animation: growthOfModal linear 0.2s;
 }
 
+.mt-16 {
+    margin-top: 16px;
+}
 
 .mt-48 {
     margin-top: 48px;
@@ -93,6 +96,13 @@ html {
 .text-center {
     text-align: center;
 }
+
+.box-shadow {
+    padding: 24px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 
 /* BUTTON */
 .btn {
@@ -568,7 +578,7 @@ html {
 
 .navbar__search-btn-icon {
     margin: auto;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--white-color);
 }
 
