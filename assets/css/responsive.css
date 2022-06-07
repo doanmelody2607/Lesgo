@@ -45,10 +45,29 @@
         text-align: center;
         margin: 0;
     }
+
+    .container__notify-text {
+        font-size: 1.6rem;
+    }
 }
 
 /* TABLET */
 @media (min-width: 46.25em) and (max-width: 63.9375em) { 
+    .heading-text {
+        font-size: 1.8rem;
+    }
+    
+    .container__heading::after {
+        content: "";
+        display: block;
+        height: 22px;
+        width: 6px;
+        background: linear-gradient(180deg, #DA0710 0%, #CA0009 100%);
+        position: absolute;
+        top: 7px;
+        left: 0;
+    }
+
     .lesgo__join-wrapper {
         padding: 20px;
     }
@@ -73,6 +92,27 @@
 
     .guide__introduce {
         margin-top: 250px;
+    }
+
+    .pagination-item__link {
+        min-width: 25px;
+    }
+
+    .header__banner2-title {
+        font-size: 5rem;
+        margin: 10px 0;
+    }
+
+    .header__banner2-desc {
+        font-size: 1.7rem;
+    }
+
+    .search__layout.desktop3 {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
     }
 }
 
@@ -222,5 +262,30 @@
 
     .guide__service-title {
         font-size: 1.4rem;
+    }
+
+    .container__result .container__tours {
+        padding: 30px 8px;
+    }
+
+    .container__result .container__tours-card {
+        margin-top: 8px;
+    }
+
+    .header__banner2-title {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .header__banner2-desc {
+        font-size: 1.2rem;
+    }
+
+    .travel__handbook {
+        padding: 0 16px;
+    }
+
+    .pagination-item__link {
+        min-width: 15px;
     }
 }

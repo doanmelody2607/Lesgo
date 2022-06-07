@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="./desktop3.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>LESGO</title>
+</head>
+<body>
+    
+    <div id="app">
+        <div id="app__header">
+            <div id="header__wrapper">
+                <div class="header__banner">
+                    <!-- <img src="/assets/img/LESGO-01-1.png" alt="" class="banner__img"> -->
+                </div>
+
+                <div class="header__navbar">
+                    <div class="grid wide">
+                        <div id="navbar">
+                            <!-- Menu On Mobile -->
+                            <div class="navbar__bar">
+                                <i class="navbar__bar-icon fa fa-bars"></i>
+                            </div>
+
+                            <!-- Navbar Logo -->
+                            <div class="navbar__logo">
+                                <img src="/assets/img/lesgo_logo2.png" alt="" class="navbar__logo__img">
+                            </div>
+            
+                            <!-- Navbar Middle --> 
+                            <div class="navbar__middle hide-on-tablet-mobile">
+                                <ul class="navbar__menu">
+                                    <li class="navbar__menu-item">
+                                        <a href="#">Kênh hướng dẫn viên</a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#">Đăng ký đối tác Lesgo</a>
+                                    </li>
+                                </ul>
+                                <button class="btn btn--primary">KHÁCH ĐĂNG NHẬP</button>
+                            </div>
+            
+                            <!-- Navbar Cart -->
+                            <div class="navbar__cart">
+                                <div class="navbar__cart-wrap">
+                                    <img src="/assets/img/cart.png" alt="" class="navbar__cart-icon">
+                                    <span class="navbar__cart-notice">3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search__layout desktop3">
+                <div class="grid wide">
+                    <div class="seacrh__layout-wrapper">
+                        <div class="navbar__search">
+                            <div class="navbar__search-input-wrap">
+                                <input type="text" class="navbar__search-input" placeholder="Tìm kiếm sản phẩm">
+                                <div class="navbar__search-history">
+                                    <h3 class="navbar__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="navbar__search-history-list">
+                                        <li class="navbar__search-history-item">
+                                            <a href="">Kem dưỡng da</a>
+                                        </li>
+                                        <li class="navbar__search-history-item">
+                                            <a href="">Kem trị mụn</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navbar__search-btn">
+                                <i class="navbar__search-btn-icon fas fa-search"></i>
+                            </div>
+                        </div>
+        
+                        <div class="search__suggest">
+                            <p class="search__suggest-text">
+                                Tour
+                            </p>
+                            <p class="search__suggest-text">
+                                Dịch vụ lưu trữ
+                            </p>
+                            <p class="search__suggest-text">
+                                Xe du lịch
+                            </p>
+                            <p class="search__suggest-text">
+                                Booking guide
+                            </p>    
+                            <p class="search__suggest-text">
+                                Hướng dẫn viên bản địa
+                            </p>
+                            <p class="search__suggest-text">
+                                Tour giờ chót
+                            </p>
+                            <p class="search__suggest-text">
+                                Tour thanh lý sang nhượng
+                            </p>
+                            <p class="search__suggest-text">
+                                Vé và combo du lịch
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__banner2">
+                <img src="/assets/img/vinhhalong.png" alt="" class="header__banner2-img">
+
+                <div class="header__banner2-cover">
+                    <h1 class="header__banner2-title">Việt Nam</h1>
+                    <p class="header__banner2-desc">Khám phá những thành phố và các điểm tham quan hàng đầu ở Việt Nam ! Các điểm du lịch tốt nhất trải dài đất nước Việt.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="app__container">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-4 c-0">
+                        <div class="container__filter">
+                            <div class="container__filter-wrap">
+                                <h3 class="container__heading heading-text">Địa điểm</h3>
+                                
+                                <form action="#" class="checkbox__scroll">
+                                    <p>
+                                      <input type="checkbox" id="test1" checked>
+                                      <label for="test1">Miền Nam</label>
+                                    </p>
+                                    <p>
+                                      <input type="checkbox" id="test2">
+                                      <label for="test2">Miền Bắc</label>
+                                    </p>
+                                    <p>
+                                      <input type="checkbox" id="test3">
+                                      <label for="test3">Miền Trung</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Mũi Né</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Nha Trang</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Phú Quốc</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Tây Nguyên</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Vũng Tàu</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Đà Lạt</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Đà Nẵng</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Orange</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Orange</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Orange</label>
+                                    </p>    
+                                </form>
+                            </div>
+
+                            <div class="container__filter-wrap mt-48">
+                                <h3 class="container__heading heading-text">Dịch vụ</h3>
+                                
+                                <form action="#" class="checkbox__scroll">
+                                    <p>
+                                        <input type="checkbox" id="test1" checked>
+                                        <label for="test1">Food Tours 1</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test2">
+                                        <label for="test2">Nightlight & Bars</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">City Tours</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Hotel Booking</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Food & Restaurant</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Airpot Pickup</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test1">
+                                        <label for="test1">Food Tours 1</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test2">
+                                        <label for="test2">Nightlight & Bars</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">City Tours</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Hotel Booking</label>
+                                    </p>
+                                </form>
+                            </div>
+
+                            <div class="container__filter-wrap mt-48">
+                                <p class="container__heading heading-text">Phương tiện</p>
+                                
+                                <form action="#" class="checkbox__scroll">
+                                    <p>
+                                        <input type="checkbox" id="test1" checked>
+                                        <label for="test1">Máy bay</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test2">
+                                        <label for="test2">Xe bus</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Tàu thuỷ</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Ô tô</label>
+                                    </p>
+                                </form>
+                            </div>
+
+                            <div class="container__filter-wrap mt-48">
+                                <h3 class="container__heading heading-text">Thời gian</h3>
+                                
+                                <form action="#" class="checkbox__scroll">
+                                    <p>
+                                        <input type="checkbox" id="test1" checked>
+                                        <label for="test1">Nhỏ hơn 3 tiếng</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test2">
+                                        <label for="test2">Nửa ngày</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Cả ngày</label>
+                                    </p>
+                                    <p>
+                                        <input type="checkbox" id="test3">
+                                        <label for="test3">Chuyến đi dài ngày</label>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-9 m-8 c-12">
+                        <div class="container__notify">
+                            <h3 class="container__notify-text">26 Tours đã được tìm thấy</h3>
+
+                            <select name="" id="" class="container__notify-choice">
+                                <option>Thức tự mặc định</option>
+                                <option value="Từ A đến Z">Từ A đến Z</option>
+                                <option value="Từ A đến Z">Từ A đến Z</option>
+                            </select>
+                        </div>
+
+                        <div class="container__result">
+                            <div class="container__tours">
+                                <div class="row">
+                                    <div class="col l-3 m-4 c-6">
+                                        <a class="container__tours-card" href="">
+                                            <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                            <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+        
+                                            <div class="container__tours__action">
+                                                <span class="container__tours__like">
+                                                    <i class="container__tours__unlike-icon far fa-heart"></i>
+                                                    <i class="container__tours__liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="container__tours__rating">
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+        
+                                            <div class="container__tours-achievement">
+                                                <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                            </div>
+        
+                                            <div class="container__tours-evaluate">
+                                                <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <a class="container__tours-card" href="">
+                                            <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                            <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+        
+                                            <div class="container__tours__action">
+                                                <span class="container__tours__like">
+                                                    <i class="container__tours__unlike-icon far fa-heart"></i>
+                                                    <i class="container__tours__liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="container__tours__rating">
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+        
+                                            <div class="container__tours-achievement">
+                                                <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                            </div>
+        
+                                            <div class="container__tours-evaluate">
+                                                <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <a class="container__tours-card" href="">
+                                            <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                            <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+        
+                                            <div class="container__tours__action">
+                                                <span class="container__tours__like">
+                                                    <i class="container__tours__unlike-icon far fa-heart"></i>
+                                                    <i class="container__tours__liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="container__tours__rating">
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+        
+                                            <div class="container__tours-achievement">
+                                                <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                            </div>
+        
+                                            <div class="container__tours-evaluate">
+                                                <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <a class="container__tours-card" href="">
+                                            <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                            <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+        
+                                            <div class="container__tours__action">
+                                                <span class="container__tours__like">
+                                                    <i class="container__tours__unlike-icon far fa-heart"></i>
+                                                    <i class="container__tours__liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="container__tours__rating">
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+        
+                                            <div class="container__tours-achievement">
+                                                <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                            </div>
+        
+                                            <div class="container__tours-evaluate">
+                                                <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <a class="container__tours-card" href="">
+                                            <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                            <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+        
+                                            <div class="container__tours__action">
+                                                <span class="container__tours__like">
+                                                    <i class="container__tours__unlike-icon far fa-heart"></i>
+                                                    <i class="container__tours__liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="container__tours__rating">
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+        
+                                            <div class="container__tours-achievement">
+                                                <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                            </div>
+        
+                                            <div class="container__tours-evaluate">
+                                                <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <a class="container__tours-card" href="">
+                                            <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                            <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+        
+                                            <div class="container__tours__action">
+                                                <span class="container__tours__like">
+                                                    <i class="container__tours__unlike-icon far fa-heart"></i>
+                                                    <i class="container__tours__liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="container__tours__rating">
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+        
+                                            <div class="container__tours-achievement">
+                                                <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                            </div>
+        
+                                            <div class="container__tours-evaluate">
+                                                <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <a class="container__tours-card" href="">
+                                            <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                            <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+        
+                                            <div class="container__tours__action">
+                                                <span class="container__tours__like">
+                                                    <i class="container__tours__unlike-icon far fa-heart"></i>
+                                                    <i class="container__tours__liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="container__tours__rating">
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+        
+                                            <div class="container__tours-achievement">
+                                                <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                            </div>
+        
+                                            <div class="container__tours-evaluate">
+                                                <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <a class="container__tours-card" href="">
+                                            <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                            <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+        
+                                            <div class="container__tours__action">
+                                                <span class="container__tours__like">
+                                                    <i class="container__tours__unlike-icon far fa-heart"></i>
+                                                    <i class="container__tours__liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="container__tours__rating">
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+        
+                                            <div class="container__tours-achievement">
+                                                <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                            </div>
+        
+                                            <div class="container__tours-evaluate">
+                                                <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <a class="container__tours-card" href="">
+                                            <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                            <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+        
+                                            <div class="container__tours__action">
+                                                <span class="container__tours__like">
+                                                    <i class="container__tours__unlike-icon far fa-heart"></i>
+                                                    <i class="container__tours__liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="container__tours__rating">
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+        
+                                            <div class="container__tours-achievement">
+                                                <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                            </div>
+        
+                                            <div class="container__tours-evaluate">
+                                                <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <a class="container__tours-card" href="">
+                                            <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                            <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+        
+                                            <div class="container__tours__action">
+                                                <span class="container__tours__like">
+                                                    <i class="container__tours__unlike-icon far fa-heart"></i>
+                                                    <i class="container__tours__liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="container__tours__rating">
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+        
+                                            <div class="container__tours-achievement">
+                                                <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                            </div>
+        
+                                            <div class="container__tours-evaluate">
+                                                <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <a class="container__tours-card" href="">
+                                            <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                            <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+        
+                                            <div class="container__tours__action">
+                                                <span class="container__tours__like">
+                                                    <i class="container__tours__unlike-icon far fa-heart"></i>
+                                                    <i class="container__tours__liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="container__tours__rating">
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+        
+                                            <div class="container__tours-achievement">
+                                                <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                            </div>
+        
+                                            <div class="container__tours-evaluate">
+                                                <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <a class="container__tours-card" href="">
+                                            <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                            <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+        
+                                            <div class="container__tours__action">
+                                                <span class="container__tours__like">
+                                                    <i class="container__tours__unlike-icon far fa-heart"></i>
+                                                    <i class="container__tours__liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="container__tours__rating">
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+        
+                                            <div class="container__tours-achievement">
+                                                <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                            </div>
+        
+                                            <div class="container__tours-evaluate">
+                                                <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <a class="container__tours-card" href="">
+                                            <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                            <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+        
+                                            <div class="container__tours__action">
+                                                <span class="container__tours__like">
+                                                    <i class="container__tours__unlike-icon far fa-heart"></i>
+                                                    <i class="container__tours__liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="container__tours__rating">
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+        
+                                            <div class="container__tours-achievement">
+                                                <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                            </div>
+        
+                                            <div class="container__tours-evaluate">
+                                                <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <a class="container__tours-card" href="">
+                                            <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                            <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+        
+                                            <div class="container__tours__action">
+                                                <span class="container__tours__like">
+                                                    <i class="container__tours__unlike-icon far fa-heart"></i>
+                                                    <i class="container__tours__liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="container__tours__rating">
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+        
+                                            <div class="container__tours-achievement">
+                                                <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                            </div>
+        
+                                            <div class="container__tours-evaluate">
+                                                <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <a class="container__tours-card" href="">
+                                            <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                            <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+        
+                                            <div class="container__tours__action">
+                                                <span class="container__tours__like">
+                                                    <i class="container__tours__unlike-icon far fa-heart"></i>
+                                                    <i class="container__tours__liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="container__tours__rating">
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+        
+                                            <div class="container__tours-achievement">
+                                                <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                            </div>
+        
+                                            <div class="container__tours-evaluate">
+                                                <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-3 m-4 c-6">
+                                        <a class="container__tours-card" href="">
+                                            <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                            <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+        
+                                            <div class="container__tours__action">
+                                                <span class="container__tours__like">
+                                                    <i class="container__tours__unlike-icon far fa-heart"></i>
+                                                    <i class="container__tours__liked-icon fas fa-heart"></i>
+                                                </span>
+                                                <div class="container__tours__rating">
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="container__tours__star-gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+        
+                                            <div class="container__tours-achievement">
+                                                <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                            </div>
+        
+                                            <div class="container__tours-evaluate">
+                                                <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="pagination__wrapper">
+                                        
+                                    </div>
+        
+                                    <div class="col l-12 m-12 c-12">
+                                        <div class="text-center mt-48">
+                                            <ul class="pagination home-product__pagination">
+                                                <li class="pagination-item">
+                                                    <a href="" class="pagination-item__link">
+                                                        <i class="pagination-item__icon fas fa-angle-left"></i>
+                                                    </a>
+                                                </li>
+                    
+                                                <li class="pagination-item pagination-item--active">
+                                                    <a href="" class="pagination-item__link">1</a>
+                                                </li>
+                                                <li class="pagination-item">
+                                                    <a href="" class="pagination-item__link">2</a>
+                                                </li>
+                                                <li class="pagination-item">
+                                                    <a href="" class="pagination-item__link">3</a>
+                                                </li>
+                                                <li class="pagination-item">
+                                                    <a href="" class="pagination-item__link">4</a>
+                                                </li>
+                                                <li class="pagination-item">
+                                                    <a href="" class="pagination-item__link">5</a>
+                                                </li>
+                                                <li class="pagination-item">
+                                                    <a href="" class="pagination-item__link">...</a>
+                                                </li>
+                                                <li class="pagination-item">
+                                                    <a href="" class="pagination-item__link">14</a>
+                                                </li>
+                    
+                                                <li class="pagination-item">
+                                                    <a href="" class="pagination-item__link">
+                                                        <i class="pagination-item__icon fas fa-angle-right"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-12 m-12 c-12">
+                        <div class="travel__handbook">
+                            <h3 class="container__heading heading-text">Cẩm nang du lịch Cung cấp thông tin mới về du lịch</h3>
+    
+                            <p class="travel__hankbook-content">
+                                LẠNG SƠN Bản Lân Đặt dường như bị bỏ quên giữa dòng chảy đô thị hóa, con đường duy nhất đến đây băng qua núi rừng hiểm trở khoảng hai tiếng.
+    
+                                Dịp lễ nào cũng vậy, dường như chúng ta đã quá quen thuộc với từ "thất thủ", "đông nghịt", "chen chúc"... Cả năm chỉ có vài dịp gia đình du lịch cùng nhau, những tâm hồn ưa xê dịch như chúng tôi lên kế hoạch về một vùng đất mới, một nơi mà mọi thứ còn nguyên sơ, thuần khiết và đẹp ngỡ như trong cổ tích.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="app_footer">
+            <div class="grid wide">
+                <div class="footer__wrapper">
+                    <div class="row">
+                        <div class="col l-5 m-12 c-12">
+                            <a href="#"><img src="/assets/img/lesgo-footer.png" alt="" class="footer__logo"></a>
+                            <p>Du lịch thông minh, kiến tạo hành trình</p>
+                            <p><span class="text-bold">Địa chỉ trụ sở: </span>C15 Khu Thương Mại Thuận Việt, Số 319 Đường Lý Thường kiệt, Phường 15, Quận 11, Thành phố Hồ Chí Minh, Việt Nam</p>
+                            <p><span class="text-bold">Điện thoại: </span>0768071727</p>
+                            <p><span class="text-bold">Email: </span>teamlesgos@gmail.com</p>
+                            <p class="text-bold">CÔNG TY TNHH ALPHAS</p>
+                            <p> Giấy chứng nhận đăng ký doanh nghiệp Số: 0316265122 Ngày cấp: 12/05/2020 Nơi cấp: Sở Kế hoạch & Đầu tư TP. Hồ Chí Minh</p>
+                            <p><span class="text-bold">Ngày cấp: </span>12/05/2020</p>
+                            <p><span class="text-bold">Nơi cấp: </span>Sở Kế hoạch & Đầu tư TP. Hồ Chí Minh</p>
+
+
+                            <p class="text-bold">Kênh thanh toán</p>
+                            <div class="row sm-gutter">
+                                <div class="col l-2-4 m-2-4 c-2-4">
+                                    <a href="" class="footer__pay">
+                                        <img src="/assets/img/double-circle.png" alt="" class="footer__pay-img">
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-2-4 c-2-4">
+                                    <a href="" class="footer__pay">
+                                        <img src="/assets/img/zalo.png" alt="" class="footer__pay-img" style="width: 30px; height: 30px;">
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-2-4 c-2-4">
+                                    <a href="" class="footer__pay">
+                                        <img src="/assets/img/momo.png" alt="" class="footer__pay-img" style="width: 30px; height: 30px;">
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-2-4 c-2-4">
+                                    <a href="" class="footer__pay">
+                                        <img src="/assets/img/jcb.png" alt="" class="footer__pay-img" style="width: 35px; height: 35px; margin-top: 4px;">
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-2-4 c-2-4">
+                                    <a href="" class="footer__pay">
+                                        <img src="/assets/img/visa.png" alt="" class="footer__pay-img">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="footer__bank">
+                                        <img src="/assets/img/banks.png" alt="" class="footer__bank-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-7 m-12 c-12">
+                            <div class="footer__section2">
+                                <div class="row">
+                                    <div class="col l-6 m-6 c-12">
+                                        <a href=""><p class="text-bold">Giới thiệu</p></a>
+                                        <a href=""><p class="text-bold">Về chúng tôi</p></a>
+                                        <a href=""><p class="text-bold">Chính sách bảo mật thông tin</p></a>
+                                        <a href=""><p class="text-bold">Điều khoản sử dụng dịch vụ</p></a>
+                                        <a href=""><p class="text-bold">Cơ chế giải quyết tranh chấp</p></a>
+                                        <a href=""><p class="text-bold">Quy chế hoạt động</p></a>
+                                        <a href=""><p class="text-bold">Tuyển dụng</p></a>
+                                    </div>
+
+                                    <div class="col l-6 m-6 c-12">
+                                        <a href="">
+                                            <p class="text-bold">Dành cho hướng dẫn viên</p>
+                                        </a>
+                                        <a href="">
+                                            <p class="text-bold">Kênh hướng dẫn viên</p>
+                                        </a>
+                                        <a href="">
+                                            <p class="text-bold">Các loại hình hướng dẫn viên</p>
+                                        </a>
+                                        <a href="">
+                                            <p class="text-bold">Hướng dẫn đăng tour hoạt động</p>
+                                        </a>
+                                        <a href="">
+                                            <p class="text-bold">Ngôn ngữ</p>
+                                        </a>
+                                        <a href="">
+                                            <p class="text-bold">Tiếng Việt</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-48">
+                                    <div class="col l-6 m-6 c-12">
+                                        <p class="text-bold">Social</p>
+
+                                        <div class="">
+                                            <a class="social__link" href="https://www.facebook.com/" target="_blank">
+                                                <img src="/assets/img/facebook.png" alt="" class="social__img">
+                                            </a>
+                                            <a class="social__link" href="https://www.instagram.com/" target="_blank">
+                                                <img src="/assets/img/instagram.png" alt="" class="social__img">
+                                            </a>
+                                            <a class="social__link" href="https://www.twitter.com/" target="_blank">
+                                                <img src="/assets/img/twitter.png" alt="" class="social__img">
+                                            </a>
+                                        </div>
+
+                                        <div class="mt-48">
+                                            <a class="social__link" href="https://www.twitter.com/" target="_blank">
+                                                <img src="/assets/img/dcma.png" alt="" class="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col l-6 m-6 c-12">
+                                        <p class="text-bold">Tải xuống ứng dụng</p>
+                                        <div>
+                                            <a class="" href="https://play.google.com/store/" target="_blank">
+                                                <img src="/assets/img/googleplay.png" alt="" class="download__img">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a class="" href="https://www.apple.com/app-store/" target="_blank">
+                                                <img src="/assets/img/appstore.png" alt="" class="download__img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="row sm-gutter footer__section2-partner">
+                                    <div class="col l-12 m-12 c-12">
+                                        <p class="text-bold">Đối tác chiến lược</p>
+                                    </div>
+                                    <div class="col l-4 m-4 c-4">
+                                        <a class="partner__wrapper" href="https://www.apple.com/app-store/" target="_blank">
+                                            <img src="/assets/img/vn-airline.png" alt="" class="partner__img">
+                                        </a>
+                                    </div>
+                                    <div class="col l-4 m-4 c-4">
+                                        <a class="partner__wrapper" href="https://www.apple.com/app-store/" target="_blank">
+                                            <img src="/assets/img/bamboo.png" alt="" class="partner__img">
+                                        </a>
+                                    </div>
+                                    <div class="col l-4 m-4 c-4">
+                                        <a class="partner__wrapper" href="https://www.apple.com/app-store/" target="_blank">
+                                            <img src="/assets/img/jetstart.png" alt="" class="partner__img">
+                                        </a>
+                                    </div>
+                                    <div class="col l-4 m-4 c-4">
+                                        <a class="partner__wrapper" href="https://www.apple.com/app-store/" target="_blank">
+                                            <div class="partner__flc">
+                                                <img src="/assets/img/flc.png" alt="" class="partner__img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-4 m-4 c-4">
+                                        <a class="partner__wrapper" href="https://www.apple.com/app-store/" target="_blank">
+                                            <div class="partner__vinpearl">
+                                                <img src="/assets/img/vinpearl.png" alt="" class="partner__img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-4 m-4 c-4">
+                                        <a class="partner__wrapper" href="https://www.apple.com/app-store/" target="_blank">
+                                            <img src="/assets/img/vietjet.png" alt="" class="partner__img">
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

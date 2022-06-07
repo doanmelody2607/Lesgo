@@ -231,6 +231,7 @@ html {
     align-items: center;
     justify-content: center;
     list-style: none;
+    padding: 0;
 }
 
 .pagination-item {
@@ -239,7 +240,7 @@ html {
 
 .pagination-item--active .pagination-item__link {
     color: var(--white-color);
-    background-color: var(--primary-color);
+    background-color: var(--blue-color);
 }
 
 .pagination-item--active .pagination-item__link:hover {
@@ -262,8 +263,8 @@ html {
 
 .heading-text {
     margin: 0;
-    line-height: 80px;
-    font-size: 2.6rem;
+    line-height: 2;
+    font-size: 2.4rem;
     font-weight: 800;
     background: linear-gradient(180deg, #2D51CA 0%, #2C82ED 100%);
     -webkit-background-clip: text;
@@ -636,23 +637,20 @@ html {
 }
 
 .container__heading {
-    padding: 0 20px;
+    padding: 0 0 0 20px;
     position: relative;
 }
 
 .container__heading::after {
     content: "";
     display: block;
-    height: 30px;
+    height: 25px;
     width: 6px;
     background: linear-gradient(180deg, #DA0710 0%, #CA0009 100%);
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 0;
-    transform: translateY(80%);
 }
-
-
 
 
 
