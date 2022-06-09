@@ -1,7 +1,9 @@
 .search__layout {
     height: 200px;
     background: linear-gradient(180deg, #267CE8 0%, #4E9FFF 100%);
-    padding: 60px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__banner2-img {
@@ -62,7 +64,7 @@
     width: 100%;
     height: 10px;
     border-radius: 8px;
-    background: var(--primary-color);
+    background: var(--background-gradient);
 }
 
 .checkbox__scroll {
@@ -245,7 +247,7 @@ i.container__tours__liked-icon {
     width: 100%;
     height: 70px;
     padding: 0 24px;
-    background: var(--primary-color);
+    background: var(--background-gradient);
     display: flex;
     align-items: center;
     justify-content: space-between;

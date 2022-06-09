@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="./desktop4.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>LESGO</title>
+</head>
+<body>
+    
+    <div id="app">
+        <div id="app__header">
+            <div id="header__wrapper">
+                <div class="header__banner">
+                    <!-- <img src="/assets/img/LESGO-01-1.png" alt="" class="banner__img"> -->
+                </div>
+
+                <div class="header__navbar">
+                    <div class="grid wide">
+                        <div id="navbar">
+                            <!-- Menu On Mobile -->
+                            <div class="navbar__bar">
+                                <i class="navbar__bar-icon fa fa-bars"></i>
+                            </div>
+
+                            <!-- Navbar Logo -->
+                            <div class="navbar__logo">
+                                <img src="/assets/img/lesgo_logo2.png" alt="" class="navbar__logo__img">
+                            </div>
+            
+                            <!-- Navbar Middle --> 
+                            <div class="navbar__middle hide-on-tablet-mobile">
+                                <ul class="navbar__menu">
+                                    <li class="navbar__menu-item">
+                                        <a href="#">Kênh hướng dẫn viên</a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#">Đăng ký đối tác Lesgo</a>
+                                    </li>
+                                </ul>
+                                <button class="btn btn--primary">KHÁCH ĐĂNG NHẬP</button>
+                            </div>
+            
+                            <!-- Navbar Cart -->
+                            <div class="navbar__cart">
+                                <div class="navbar__cart-wrap">
+                                    <img src="/assets/img/cart.png" alt="" class="navbar__cart-icon">
+                                    <span class="navbar__cart-notice">3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search__layout independence">
+                <div class="grid wide">
+                    <div class="seacrh__layout-wrapper">
+                        <div class="navbar__search">
+                            <div class="navbar__search-input-wrap">
+                                <input type="text" class="navbar__search-input" placeholder="Tìm kiếm sản phẩm">
+                                <div class="navbar__search-history">
+                                    <h3 class="navbar__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="navbar__search-history-list">
+                                        <li class="navbar__search-history-item">
+                                            <a href="">Kem dưỡng da</a>
+                                        </li>
+                                        <li class="navbar__search-history-item">
+                                            <a href="">Kem trị mụn</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="navbar__search-btn">
+                                <i class="navbar__search-btn-icon fas fa-search"></i>
+                            </div>
+                        </div>
+        
+                        <div class="search__suggest">
+                            <p class="search__suggest-text">
+                                Tour
+                            </p>
+                            <p class="search__suggest-text">
+                                Dịch vụ lưu trữ
+                            </p>
+                            <p class="search__suggest-text">
+                                Xe du lịch
+                            </p>
+                            <p class="search__suggest-text">
+                                Booking guide
+                            </p>    
+                            <p class="search__suggest-text">
+                                Hướng dẫn viên bản địa
+                            </p>
+                            <p class="search__suggest-text">
+                                Tour giờ chót
+                            </p>
+                            <p class="search__suggest-text">
+                                Tour thanh lý sang nhượng
+                            </p>
+                            <p class="search__suggest-text">
+                                Vé và combo du lịch
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__banner2">
+                <img src="/assets/img/vinhhalong.png" alt="" class="header__banner2-img">
+
+                <div class="header__banner2-cover">
+                    <h1 class="header__banner2-title">Phan Thiết - Việt Nam</h1>
+                    <p class="header__banner2-desc">Khám phá những thành phố và các điểm tham quan hàng đầu ở Việt Nam ! Các điểm du lịch tốt nhất trải dài đất nước Việt.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="app__container">
+            <div class="grid wide">
+                <div class="container__route">
+                    <h3 class="container__route-name container__route-arrow">Việt Nam</h3>
+                    <h3 class="container__route-name container__route-arrow">Đà Nẵng</h3>
+                    <h3 class="container__route-name">Vé Cáp Treo Sun World Bà Nà Hills Đà Nẵng</h3>
+                </div>
+
+                <div class="place__detail">
+                    <div class="place__detail-heading">
+                        <h3 class="heading-text">Vé Cáp Treo Sun World Bà Nà Hills Đà Nẵng</h3>
+                        <p>0 / 0 đánh giá | 100+ đã đặt</p>
+                    </div>
+
+                    <div class="row place__detail-body">
+                        <div class="col l-8 m-12 c-12">
+                            <div class="place__detail-thumbnail">
+                                <img src="/assets/img/BaNaHill.png" alt="">
+                            </div>
+
+                            <div class="place__detail-info mt-60">
+                                <h3 class="place__detail-info--title">Thông tin</h3>
+                                <div class="row">
+                                    <div class="col l-6 m-6 c-6">
+                                        <div class="place__detail-info--wrapper">
+                                            <img src="/assets/img/location-icon.png" alt="">
+                                            <h3>Thông tin tour</h3>
+                                        </div>
+                                        <div class="place__detail-info--wrapper">
+                                            <img src="/assets/img/destinate-icon.png" alt="">
+                                            <h3>Điểm đến: Hội An</h3>
+                                        </div>
+                                        <div class="place__detail-info--wrapper">
+                                            <img src="/assets/img/time-icon.png" alt="">
+                                            <h3>Thơi gian chuyến đi</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="col l-6 m-6 c-6">
+                                        <div class="place__detail-info--wrapper">
+                                            <img src="/assets/img/location-icon.png" alt="">
+                                            <h3>Thông tin tour</h3>
+                                        </div>
+                                        <div class="place__detail-info--wrapper">
+                                            <img src="/assets/img/destinate-icon.png" alt="">
+                                            <h3>Điểm đến: Hội An</h3>
+                                        </div>
+                                        <div class="place__detail-info--wrapper">
+                                            <img src="/assets/img/time-icon.png" alt="">
+                                            <h3>Thơi gian chuyến đi</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="place__detail-introduce mt-60">
+                                <h3 class="container__heading heading-text">Giới thiệu</h3>
+
+                                <p class="">Tặng voucher buffet trưa trị giá 260,000 VND, sử dụng tại nhà hàng Beer Plaza (11:00 - 15:00). Áp dụng cho khách tham quan Bà Nà Hills từ ngày 18/3/2022 đến ngày 24/4/2022</p>
+                                <p>Vui lòng kiểm tra lịch vận hành cáp treo trước khi mua vé!</p>
+                                <p>Đến Bà Nà Hills để trải nghiệm tuyến cáp treo thuộc top 10 thế giới với quang cảnh hùng vĩ từ đỉnh núi Chúa</p>
+                                <p>Chụp ảnh tại Cầu Vàng, cây cầu đi bộ ấn tượng nhất thế giới với khung cảnh tuyệt vời</p>
+                                <p>Chiêm ngưỡng công trình kiến trúc đặc sắc của làng Pháp cổ kính cùng không gian văn hoá linh thiêng</p>
+                                <p>Khám phá Bà Nà Hills trong 01 ngày cùng LESGO với bí kíp siêu hữu ích</p>
+                                <p>Chọn ngay các combo độc quyền với xe đưa đón khứ hồi Đà Nẵng, thuyền thúng dừa và thuyền sông Hoài ở Hội An để có kì nghỉ hoàn hảo</p>
+                                <p>Vui lòng xem các hướng dẫn khi mua hàng và thanh toán trên LESGO: Cách Mua Hàng và Sử Dụng Mã Giảm Giá; Cách Thanh toán qua Ví MoMo và Thẻ Ngân Hàng</p>
+                            
+                                <button class="btn btn--normal">Xem thêm</button>
+                            </div>
+
+                            <div class="place__detail-option mt-60">
+                                <h3 class="container__heading heading-text">Chuyến đi đã bao gồm</h3>
+
+                                <div class="place__detail-option--wrap">
+                                    <i class="fa fa-check"></i>
+                                    <h3>Hướng dẫn nói - Tiếng Anh</h3>
+                                </div>
+                                <div class="place__detail-option--wrap">
+                                    <i class="fa fa-check"></i>
+                                    <h3>Nước giải khát</h3>
+                                </div>
+                                <div class="place__detail-option--wrap">
+                                    <i class="fa fa-check"></i>
+                                    <h3>Rider (Aodai rider)</h3>
+                                </div>
+                                <div class="place__detail-option--wrap">
+                                    <i class="fa fa-check"></i>
+                                    <h3>Nếm thử đồ ăn từ 6-7 món ăn địa phương tại 5 điểm dừng ăn uống</h3>
+                                </div>
+                                <div class="place__detail-option--wrap">
+                                    <i class="fa fa-check"></i>
+                                    <h3>Bảo hiểm do nhà điều hành cung cấp</h3>
+                                </div>
+                                <div class="place__detail-option--wrap">
+                                    <i class="fa fa-check"></i>
+                                    <h3>Hướng dẫn chuyên nghiệp</h3>
+                                </div>
+                                <div class="place__detail-option--wrap">
+                                    <i class="fa fa-check"></i>
+                                    <h3>Mũ bảo hiểm</h3>
+                                </div>
+                                <div class="place__detail-option--wrap">
+                                    <i class="fa fa-check"></i>
+                                    <h3>Xe máy</h3>
+                                </div>
+                                <div class="place__detail-option--wrap">
+                                    <i class="fa fa-check"></i>
+                                    <h3>Quà tặng địa phương</h3>
+                                </div>
+                            </div>
+
+                            <div class="place__detail-booking mt-60">
+                                <div class="booking__guide">
+                                    <h3 class="booking__guide-name">Vui lòng chọn ngày và gói dịch vụ</h3>
+                                    <p class="booking__guide-achieve">Xin chọn ngày tham gia</p>
+                                </div>
+
+                                <button class="btn btn--primary">Xem trạng thái dịch vụ</button>
+
+                                <div class="booking__price mt-48">
+                                    <p>Loại gói dịch vụ</p>
+                                    <h3>Vé Cáp Treo Sun World Bà Nà Hills Đà Nẵng</h3>
+                                </div>
+
+                                <div class="booking__quantiy mt-48">
+                                    <p>Số lượng</p>
+
+                                    <div class="booking__quantity-choose">
+                                        <input type="text" placeholder="Số lượng">
+
+                                        <div class="booking__quantity-total">
+                                            <h3>800.000đ</h3>
+
+                                            <div class="booking__quantity-control">
+                                                <p class="booking__quantity-control--btn">+</p>
+                                                <p class="booking__quantity-count">4</p>
+                                                <p class="booking__quantity-control--btn">-</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h3 class="booking__price-red mt-48">700.000đ</h3>
+
+                                <div class="booking__btn-wrapper mt-48">
+                                    <button class="btn btn--orange">Đặt ngay</button>
+                                    <button class="btn btn--primary">Thêm vào giỏ hàng</button>
+                                </div>
+                            </div>
+
+                            <div class="place__detail-plan mt-60">
+                                <h3 class="container__heading heading-text">Hành trình</h3>
+
+                                <div class="plan__wrapper">
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-4 m-12 c-12">
+                            <div class="place__detail-booking">
+                                <div class="booking__guide">
+                                    <h3 class="booking__guide-name">Nguyễn Hoài Thương</h3>
+                                    <p class="booking__guide-achieve">0 / 0 đánh giá | 35 chuyến đi</p>
+                                </div>
+
+                                <button class="booking__buide-chat btn btn--green-outline">Chat ngay</button>
+
+                                <div class="booking__price mt-48">
+                                    <p>Giá chỉ từ</p>
+                                    <h3>800.000đ</h3>
+                                </div>
+
+                                <button class="booking__guide-services btn btn--primary">Chọn các gói dịch vụ</button>
+
+                                <div class="copy__link mt-48">
+                                    <button>Sao chép</button>
+                                    <input type="text" value="www.lesgo.vn/chiasengay.....wwsjcnonon">
+                                </div>
+
+                                <div class="row mt-48">
+                                    <div class="col l-12 m-12 c-12">
+                                        <h3 class="container__heading heading-text">Chia sẻ ngay</h3>
+                                    </div>
+                                    <div class="col l-6 m-6 c-6">
+                                        <div class="">
+                                            <a class="social__link" href="https://www.facebook.com/" target="_blank">
+                                                <img src="/assets/img/facebook.png" alt="" class="social__img">
+                                            </a>
+                                            <a class="social__link" href="https://www.instagram.com/" target="_blank">
+                                                <img src="/assets/img/instagram.png" alt="" class="social__img">
+                                            </a>
+                                            <a class="social__link" href="https://www.twitter.com/" target="_blank">
+                                                <img src="/assets/img/twitter.png" alt="" class="social__img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="place__detail-booking mt-48">
+                                <div class="booking__expand">
+                                    <div class="booking__expand-symbol"></div>
+                                    <h3 class="booking__expand-title">Thông tin tour</h3>
+                                </div>
+                                <div class="booking__expand mt-48">
+                                    <div class="booking__expand-symbol"></div>
+                                    <h3 class="booking__expand-title">Giới thiệu tour</h3>
+                                </div>
+                                <div class="booking__expand mt-48">
+                                    <div class="booking__expand-symbol"></div>
+                                    <h3 class="booking__expand-title">Chuyến đi đã bao gồm</h3>
+                                </div>
+                                <div class="booking__expand mt-48">
+                                    <div class="booking__expand-symbol"></div>
+                                    <h3 class="booking__expand-title">Hành trình</h3>
+                                </div>
+
+                                <button class="booking__button mt-48 btn btn--orange">Đặt ngay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide__offer mt-60">
+                    <h3 class="container__heading heading-text">Guide đề xuất</h3>
+                    <div class="row">
+                        <div class="col l-2 m-4 c-6">
+                            <a class="container__guide-card" href="">
+                                <div class="container__guide-img" style="background-image: url(/assets/img/tour-guide.png);"></div>
+                                <h4 class="container__guide-name">Trần Phạm Minh Tiến</h4>
+
+                                <div class="container__guide-achievement">
+                                    <span class="container__guide-country">Tp. Hà Nội</span>
+                                    <span class="container__guide-trip">[+100] chuyến đi</span>
+                                </div>
+
+                                <div class="container__guide-evaluate">
+                                    <span class="container__guide-evaluate--number">2 đánh giá</span>
+                                </div>
+                                
+                                <div class="container__guide__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+
+                                <div class="container__guide-view">
+                                    <button href="" class="btn btn--size-s btn--normal">Xem thêm</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2 m-4 c-6">
+                            <a class="container__guide-card" href="">
+                                <div class="container__guide-img" style="background-image: url(/assets/img/tour-guide.png);"></div>
+                                <h4 class="container__guide-name">Trần Phạm Minh Tiến</h4>
+
+                                <div class="container__guide-achievement">
+                                    <span class="container__guide-country">Tp. Hồ Chí Minh</span>
+                                    <span class="container__guide-trip">[+100] chuyến đi</span>
+                                </div>
+
+                                <div class="container__guide-evaluate">
+                                    <span class="container__guide-evaluate--number">2 đánh giá</span>
+                                </div>
+                                
+                                <div class="container__guide__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+
+                                <div class="container__guide-view">
+                                    <button class="container__guide-btn btn btn--size-s btn--normal">Xem thêm</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2 m-4 c-6">
+                            <a class="container__guide-card" href="">
+                                <div class="container__guide-img" style="background-image: url(/assets/img/tour-guide.png);"></div>
+                                <h4 class="container__guide-name">Trần Phạm Minh Tiến</h4>
+
+                                <div class="container__guide-achievement">
+                                    <span class="container__guide-country">Tp. Hồ Chí Minh</span>
+                                    <span class="container__guide-trip">[+100] chuyến đi</span>
+                                </div>
+
+                                <div class="container__guide-evaluate">
+                                    <span class="container__guide-evaluate--number">2 đánh giá</span>
+                                </div>
+                                
+                                <div class="container__guide__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+
+                                <div class="container__guide-view">
+                                    <button class="container__guide-btn btn btn--size-s btn--normal">Xem thêm</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2 m-4 c-6">
+                            <a class="container__guide-card" href="">
+                                <div class="container__guide-img" style="background-image: url(/assets/img/tour-guide.png);"></div>
+                                <h4 class="container__guide-name">Trần Phạm Minh Tiến</h4>
+
+                                <div class="container__guide-achievement">
+                                    <span class="container__guide-country">Tp. Hồ Chí Minh</span>
+                                    <span class="container__guide-trip">[+100] chuyến đi</span>
+                                </div>
+
+                                <div class="container__guide-evaluate">
+                                    <span class="container__guide-evaluate--number">2 đánh giá</span>
+                                </div>
+                                
+                                <div class="container__guide__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+
+                                <div class="container__guide-view">
+                                    <button class="container__guide-btn btn btn--size-s btn--normal">Xem thêm</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2 m-4 c-6">
+                            <a class="container__guide-card" href="">
+                                <div class="container__guide-img" style="background-image: url(/assets/img/tour-guide.png);"></div>
+                                <h4 class="container__guide-name">Trần Phạm Minh Tiến</h4>
+
+                                <div class="container__guide-achievement">
+                                    <span class="container__guide-country">Tp. Hồ Chí Minh</span>
+                                    <span class="container__guide-trip">[+100] chuyến đi</span>
+                                </div>
+
+                                <div class="container__guide-evaluate">
+                                    <span class="container__guide-evaluate--number">2 đánh giá</span>
+                                </div>
+                                
+                                <div class="container__guide__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+
+                                <div class="container__guide-view">
+                                    <button class="container__guide-btn btn btn--size-s btn--normal">Xem thêm</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2 m-4 c-6">
+                            <a class="container__guide-card" href="">
+                                <div class="container__guide-img" style="background-image: url(/assets/img/tour-guide.png);"></div>
+                                <h4 class="container__guide-name">Trần Phạm Minh Tiến</h4>
+
+                                <div class="container__guide-achievement">
+                                    <span class="container__guide-country">Tp. Hồ Chí Minh</span>
+                                    <span class="container__guide-trip">[+100] chuyến đi</span>
+                                </div>
+
+                                <div class="container__guide-evaluate">
+                                    <span class="container__guide-evaluate--number">2 đánh giá</span>
+                                </div>
+                                
+                                <div class="container__guide__favourite">
+                                    <i class="fas fa-check"></i>
+                                    <span>Yêu thích</span>
+                                </div>
+
+                                <div class="container__guide-view">
+                                    <button class="container__guide-btn btn btn--size-s btn--normal">Xem thêm</button>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col l-12 m-12 c-12">
+                            <div class="container__guide-btn text-center mt-48">
+                                <button class="btn btn--normal">
+                                    XEM TẤT CẢ
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="guide__evaluate mt-60">
+                    <h3 class="container__heading heading-text">Đánh giá</h3>
+
+                    <div class="container_evaluate-write mt-24">
+                        <div class="navbar__search">
+                            <div class="navbar__search-input-wrap">
+                                <input type="text" class="navbar__search-input" placeholder="Viết bình luận...">
+                            </div>
+
+                            <div class="navbar__search-btn">
+                                <h3 class="navbar__search-btn-icon">GỬI</h3>
+                            </div>
+                        </div>
+
+                        <div class="evaluate__action">
+                            <img src="/assets/img/camera-vector.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="container__evalutate-comment">
+                        <div class="comment__user">
+                            <img src="/assets/img/avatar-guide.png" alt="" class="comment__user-img">
+                            <div class="comment__user-info">
+                                <h3 class="comment__user-name">Trần Phạm Minh Tiến</h3>
+                                <p class="comment__user-date">11 tháng 5 lúc 21h34</p>
+                            </div>
+                        </div>
+
+                        <p class="comment__user-content">
+                            Bạn đang lên kế hoạch cho một chuyến du lịch cùng bạn bè, người thân, gia đình hay đồng nghiệp   
+                        </p>
+                    </div>
+
+                    <div class="container__evalutate-comment">
+                        <div class="comment__user">
+                            <img src="/assets/img/avatar-guide.png" alt="" class="comment__user-img">
+                            <div class="comment__user-info">
+                                <h3 class="comment__user-name">Sơn Tùng Linh</h3>
+                                <p class="comment__user-date">11 tháng 5 lúc 21h34</p>
+                            </div>
+                        </div>
+
+                        <p class="comment__user-content">
+                            Tour chất lượng    
+                        </p>
+                    </div>
+
+                    <div class="container__evalutate-comment">
+                        <div class="comment__user">
+                            <img src="/assets/img/avatar-guide.png" alt="" class="comment__user-img">
+                            <div class="comment__user-info">
+                                <h3 class="comment__user-name">Sơn Tùng Linh</h3>
+                                <p class="comment__user-date">11 tháng 5 lúc 21h34</p>
+                            </div>
+                        </div>
+
+                        <p class="comment__user-content">
+                            Hướng dẫn viên đẹp trai 
+                        </p>
+                    </div>
+
+                    <div class="container__guide-btn text-center mt-48">
+                        <button class="btn btn--normal">
+                            XEM THÊM ĐÁNH GIÁ
+                        </button>
+                    </div>
+                </div>
+
+                <div class="container__tours mt-60">
+                    <h3 class="container__heading heading-text">Có thể bạn sẽ thích</h3>
+
+                    <div class="row">
+                        <div class="col l-2 m-4 c-6">
+                            <a class="container__tours-card" href="">
+                                <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+
+                                <div class="container__tours__action">
+                                    <span class="container__tours__like">
+                                        <i class="container__tours__unlike-icon far fa-heart"></i>
+                                        <i class="container__tours__liked-icon fas fa-heart"></i>
+                                    </span>
+                                    <div class="container__tours__rating">
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="container__tours-achievement">
+                                    <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                </div>
+
+                                <div class="container__tours-evaluate">
+                                    <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2 m-4 c-6">
+                            <a class="container__tours-card" href="">
+                                <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+
+                                <div class="container__tours__action">
+                                    <span class="container__tours__like">
+                                        <i class="container__tours__unlike-icon far fa-heart"></i>
+                                        <i class="container__tours__liked-icon fas fa-heart"></i>
+                                    </span>
+                                    <div class="container__tours__rating">
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="container__tours-achievement">
+                                    <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                </div>
+
+                                <div class="container__tours-evaluate">
+                                    <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col l-2 m-4 c-6">
+                            <a class="container__tours-card" href="">
+                                <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+
+                                <div class="container__tours__action">
+                                    <span class="container__tours__like">
+                                        <i class="container__tours__unlike-icon far fa-heart"></i>
+                                        <i class="container__tours__liked-icon fas fa-heart"></i>
+                                    </span>
+                                    <div class="container__tours__rating">
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="container__tours-achievement">
+                                    <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                </div>
+
+                                <div class="container__tours-evaluate">
+                                    <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col l-2 m-4 c-6">
+                            <a class="container__tours-card" href="">
+                                <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+
+                                <div class="container__tours__action">
+                                    <span class="container__tours__like">
+                                        <i class="container__tours__unlike-icon far fa-heart"></i>
+                                        <i class="container__tours__liked-icon fas fa-heart"></i>
+                                    </span>
+                                    <div class="container__tours__rating">
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="container__tours-achievement">
+                                    <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                </div>
+
+                                <div class="container__tours-evaluate">
+                                    <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2 m-4 c-6">
+                            <a class="container__tours-card" href="">
+                                <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+
+                                <div class="container__tours__action">
+                                    <span class="container__tours__like">
+                                        <i class="container__tours__unlike-icon far fa-heart"></i>
+                                        <i class="container__tours__liked-icon fas fa-heart"></i>
+                                    </span>
+                                    <div class="container__tours__rating">
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="container__tours-achievement">
+                                    <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                </div>
+
+                                <div class="container__tours-evaluate">
+                                    <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2 m-4 c-6">
+                            <a class="container__tours-card" href="">
+                                <div class="container__tours-img" style="background-image: url(/assets/img/tuong-phat.png);"></div>
+                                <h4 class="container__tours-name">Tour Bình Ba trong ngày từ Nha Trang</h4>
+
+                                <div class="container__tours__action">
+                                    <span class="container__tours__like">
+                                        <i class="container__tours__unlike-icon far fa-heart"></i>
+                                        <i class="container__tours__liked-icon fas fa-heart"></i>
+                                    </span>
+                                    <div class="container__tours__rating">
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="container__tours__star-gold fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="container__tours-achievement">
+                                    <span class="container__tours-country">Thời gian: 5 ngày</span>
+                                </div>
+
+                                <div class="container__tours-evaluate">
+                                    <span class="container__tours-evaluate--number">từ 700.000 đồng</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="app_footer">
+            <div class="grid wide">
+                <div class="footer__wrapper">
+                    <div class="row">
+                        <div class="col l-5 m-12 c-12">
+                            <a href="#"><img src="/assets/img/lesgo-footer.png" alt="" class="footer__logo"></a>
+                            <p>Du lịch thông minh, kiến tạo hành trình</p>
+                            <p><span class="text-bold">Địa chỉ trụ sở: </span>C15 Khu Thương Mại Thuận Việt, Số 319 Đường Lý Thường kiệt, Phường 15, Quận 11, Thành phố Hồ Chí Minh, Việt Nam</p>
+                            <p><span class="text-bold">Điện thoại: </span>0768071727</p>
+                            <p><span class="text-bold">Email: </span>teamlesgos@gmail.com</p>
+                            <p class="text-bold">CÔNG TY TNHH ALPHAS</p>
+                            <p> Giấy chứng nhận đăng ký doanh nghiệp Số: 0316265122 Ngày cấp: 12/05/2020 Nơi cấp: Sở Kế hoạch & Đầu tư TP. Hồ Chí Minh</p>
+                            <p><span class="text-bold">Ngày cấp: </span>12/05/2020</p>
+                            <p><span class="text-bold">Nơi cấp: </span>Sở Kế hoạch & Đầu tư TP. Hồ Chí Minh</p>
+
+
+                            <p class="text-bold">Kênh thanh toán</p>
+                            <div class="row sm-gutter">
+                                <div class="col l-2-4 m-2-4 c-2-4">
+                                    <a href="" class="footer__pay">
+                                        <img src="/assets/img/double-circle.png" alt="" class="footer__pay-img">
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-2-4 c-2-4">
+                                    <a href="" class="footer__pay">
+                                        <img src="/assets/img/zalo.png" alt="" class="footer__pay-img" style="width: 30px; height: 30px;">
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-2-4 c-2-4">
+                                    <a href="" class="footer__pay">
+                                        <img src="/assets/img/momo.png" alt="" class="footer__pay-img" style="width: 30px; height: 30px;">
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-2-4 c-2-4">
+                                    <a href="" class="footer__pay">
+                                        <img src="/assets/img/jcb.png" alt="" class="footer__pay-img" style="width: 35px; height: 35px; margin-top: 4px;">
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-2-4 c-2-4">
+                                    <a href="" class="footer__pay">
+                                        <img src="/assets/img/visa.png" alt="" class="footer__pay-img">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col l-12 m-12 c-12">
+                                    <div class="footer__bank">
+                                        <img src="/assets/img/banks.png" alt="" class="footer__bank-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-7 m-12 c-12">
+                            <div class="footer__section2">
+                                <div class="row">
+                                    <div class="col l-6 m-6 c-12">
+                                        <a href=""><p class="text-bold">Giới thiệu</p></a>
+                                        <a href=""><p class="text-bold">Về chúng tôi</p></a>
+                                        <a href=""><p class="text-bold">Chính sách bảo mật thông tin</p></a>
+                                        <a href=""><p class="text-bold">Điều khoản sử dụng dịch vụ</p></a>
+                                        <a href=""><p class="text-bold">Cơ chế giải quyết tranh chấp</p></a>
+                                        <a href=""><p class="text-bold">Quy chế hoạt động</p></a>
+                                        <a href=""><p class="text-bold">Tuyển dụng</p></a>
+                                    </div>
+
+                                    <div class="col l-6 m-6 c-12">
+                                        <a href="">
+                                            <p class="text-bold">Dành cho hướng dẫn viên</p>
+                                        </a>
+                                        <a href="">
+                                            <p class="text-bold">Kênh hướng dẫn viên</p>
+                                        </a>
+                                        <a href="">
+                                            <p class="text-bold">Các loại hình hướng dẫn viên</p>
+                                        </a>
+                                        <a href="">
+                                            <p class="text-bold">Hướng dẫn đăng tour hoạt động</p>
+                                        </a>
+                                        <a href="">
+                                            <p class="text-bold">Ngôn ngữ</p>
+                                        </a>
+                                        <a href="">
+                                            <p class="text-bold">Tiếng Việt</p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-48">
+                                    <div class="col l-6 m-6 c-12">
+                                        <p class="text-bold">Social</p>
+
+                                        <div class="">
+                                            <a class="social__link" href="https://www.facebook.com/" target="_blank">
+                                                <img src="/assets/img/facebook.png" alt="" class="social__img">
+                                            </a>
+                                            <a class="social__link" href="https://www.instagram.com/" target="_blank">
+                                                <img src="/assets/img/instagram.png" alt="" class="social__img">
+                                            </a>
+                                            <a class="social__link" href="https://www.twitter.com/" target="_blank">
+                                                <img src="/assets/img/twitter.png" alt="" class="social__img">
+                                            </a>
+                                        </div>
+
+                                        <div class="mt-48">
+                                            <a class="social__link" href="https://www.twitter.com/" target="_blank">
+                                                <img src="/assets/img/dcma.png" alt="" class="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col l-6 m-6 c-12">
+                                        <p class="text-bold">Tải xuống ứng dụng</p>
+                                        <div>
+                                            <a class="" href="https://play.google.com/store/" target="_blank">
+                                                <img src="/assets/img/googleplay.png" alt="" class="download__img">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a class="" href="https://www.apple.com/app-store/" target="_blank">
+                                                <img src="/assets/img/appstore.png" alt="" class="download__img">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="row sm-gutter footer__section2-partner">
+                                    <div class="col l-12 m-12 c-12">
+                                        <p class="text-bold">Đối tác chiến lược</p>
+                                    </div>
+                                    <div class="col l-4 m-4 c-4">
+                                        <a class="partner__wrapper" href="https://www.apple.com/app-store/" target="_blank">
+                                            <img src="/assets/img/vn-airline.png" alt="" class="partner__img">
+                                        </a>
+                                    </div>
+                                    <div class="col l-4 m-4 c-4">
+                                        <a class="partner__wrapper" href="https://www.apple.com/app-store/" target="_blank">
+                                            <img src="/assets/img/bamboo.png" alt="" class="partner__img">
+                                        </a>
+                                    </div>
+                                    <div class="col l-4 m-4 c-4">
+                                        <a class="partner__wrapper" href="https://www.apple.com/app-store/" target="_blank">
+                                            <img src="/assets/img/jetstart.png" alt="" class="partner__img">
+                                        </a>
+                                    </div>
+                                    <div class="col l-4 m-4 c-4">
+                                        <a class="partner__wrapper" href="https://www.apple.com/app-store/" target="_blank">
+                                            <div class="partner__flc">
+                                                <img src="/assets/img/flc.png" alt="" class="partner__img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-4 m-4 c-4">
+                                        <a class="partner__wrapper" href="https://www.apple.com/app-store/" target="_blank">
+                                            <div class="partner__vinpearl">
+                                                <img src="/assets/img/vinpearl.png" alt="" class="partner__img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col l-4 m-4 c-4">
+                                        <a class="partner__wrapper" href="https://www.apple.com/app-store/" target="_blank">
+                                            <img src="/assets/img/vietjet.png" alt="" class="partner__img">
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

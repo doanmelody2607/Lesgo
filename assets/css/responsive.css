@@ -49,6 +49,16 @@
     .container__notify-text {
         font-size: 1.6rem;
     }
+
+    .container__route-name {
+        font-size: 1.5rem;
+    }
+
+    .container__route-arrow::after {
+        top: 3px;
+        right: -35px;
+        border-width: 5px 6px;
+    }
 }
 
 /* TABLET */
@@ -107,11 +117,7 @@
         font-size: 1.7rem;
     }
 
-    .search__layout.desktop3 {
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .search__layout.independence {
         height: 150px;
     }
 }
@@ -120,6 +126,10 @@
 @media (max-width: 46.1875em) { 
     .hide-on-mobile {
         display: none;
+    }
+
+    .search__layout.independence {
+        height: 100px;
     }
 
     #navbar {

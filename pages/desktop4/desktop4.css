@@ -1,0 +1,572 @@
+.search__layout {
+    height: 200px;
+    background: linear-gradient(180deg, #267CE8 0%, #4E9FFF 100%);
+}
+
+.header__banner2-img {
+    width: 100%;
+}
+
+.header__banner2 {
+    position: relative;
+}
+
+.header__banner2-cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header__banner2-title {
+    font-size: 7rem;
+}
+
+.header__banner2-desc {
+    font-size: 2rem;
+    line-height: 2;
+    max-width: 500px;
+}
+
+/* CONTAINER */
+#app__container {
+    padding: 0 24px;
+}
+
+/* CONTAINER ROUTE */
+.container__route {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container__route-name {
+    /* color: var(--blue-color); */
+    font-size: 1.8rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.container__route-name + .container__route-name {
+    margin-left: 48px;
+}
+
+.container__route-arrow::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: -35px;
+    border-width: 7px 9px;
+    border-style: solid;
+    border-color: transparent transparent transparent #333;
+}
+
+
+/* PLACE DETAIL */
+.place__detail-heading {
+    margin: 48px 0;
+}
+
+.place__detail-heading h3 {
+    font-size: 2.4rem;
+}
+
+.place__detail-heading p {
+    font-size: 1.6rem;
+}
+
+.place__detail-thumbnail img {
+    width: 100%;
+}
+
+.place__detail-info--title {
+    font-size: 2.6rem;
+    color: #414141;
+}
+
+.place__detail-info--wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.place__detail-info--wrapper img {
+    width: 30px;
+    height: 30px;
+}
+
+.place__detail-info--wrapper h3 {
+    margin-left: 24px;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+/* BOOKING */
+.place__detail-booking {
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border-top-color: #fff;
+}
+
+.booking__guide-name {
+    color: #414141;
+    font-size: 2rem;
+}
+
+.booking__guide-achieve {
+    font-size: 1.8rem;
+}
+
+.booking__price p {
+    font-size: 2rem;
+}
+
+.booking__price h3 {
+    color: #414141;
+    font-size: 2.2rem;
+}
+
+.booking__guide-services {
+    width: 100%;
+}
+
+.copy__link {
+    width: 100%;
+    height: 30px;
+    border: 1px solid var(--blue-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.copy__link button {
+    font-size: 1.6rem;
+    height: 28px;
+    width: 100px;
+    font-weight: 600;
+    border: none;
+    background: #E5E5E5;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.copy__link button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.copy__link input {
+    padding: 0 10px;
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    height: 25px;
+    flex: 1;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.booking__expand {
+    display: flex;
+    
+}
+
+.booking__expand-symbol {
+    border-width: 7px 9px;
+    border-style: solid;
+    border-color: transparent transparent transparent #267CE8;
+}
+
+.booking__expand-title {
+    margin: 0 0 0 12px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.place__detail-introduce p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.place__detail-option--wrap {
+    display: flex;
+    align-items: center;
+}
+
+.place__detail-option--wrap i {
+    font-size: 1.8rem;
+    color: var(--green-color);
+}
+
+.place__detail-option--wrap h3 {
+    margin-left: 16px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.booking__quantity {
+
+}
+
+.booking__quantiy p {
+    font-size: 2rem;
+}
+
+.booking__quantity-choose {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.booking__quantity-choose {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.booking__quantity-choose input {
+    border: none;
+    outline: none;
+    height: 58px;
+    flex: 1;
+    border-radius: 8px;
+    font-size: 1.8rem;
+}
+
+.booking__quantity-total {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.booking__quantity-total h3 {
+    font-size: 2.6rem;
+    color: #414141;
+    margin-right: 16px;
+}
+
+.booking__quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.booking__quantity-control--btn {
+    color: var(--white-color);
+    font-size: 2.4rem;
+    padding: 5px 10px;
+    background-color: #267CE8;
+    border-radius: 4px;
+}
+
+.booking__quantity-control--btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.booking__quantity-count {
+    color: #414141;
+    margin: 0 16px;
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.booking__price-red {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: red;
+}
+
+.booking__btn-wrapper button:nth-child(2) {
+    margin-left: 16px;
+}
+
+/* TOUR GUIDE */
+.container__guide {
+    /* padding: 60px 24px; */
+}
+
+.container__guide-card {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    background-color: var(--white-color);
+    margin-top: 24px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    transition: transform linear 0.1s;
+    will-change: transform;
+}
+
+.container__guide-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.container__guide-img {
+    width: 100%;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    
+}
+
+.container__guide-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--blue-color);
+    line-height: 1.8rem;
+    margin: 10px 10px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+
+.container__guide-achievement {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 0;
+    font-size: 0.9rem;
+}
+
+.container__guide-trip {
+    color: var(--blue-color);
+}
+
+.container__guide-country {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.container__guide-evaluate {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container__guide-evaluate--number {
+    margin: 10px;
+    font-size: 1.2rem;
+    color: red;
+}
+
+.container__guide__action {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 0;
+}
+
+.container__guide__like {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+i.container__guide__liked-icon {
+    color: #f63d30;
+    display: none;
+}
+
+.container__guide__like-liked .container__guide__unlike-icon {
+    display: none;
+}
+
+.container__guide__like-liked .container__guide__liked-icon {
+    display: inline-block;
+}
+
+.container__guide__rating {
+    font-size: 1rem;
+    transform: scale(0.7);
+    transform-origin: right;
+    color: #d5d5d5;
+    margin-left: auto;
+}
+
+.container__guide__star-gold {
+    color: var(--star-gold-color);
+}
+
+.container__guide__sold {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-left: 6px;
+}
+
+.container__guide__favourite {
+    position: absolute;
+    top: 10px;
+    left: -4px;
+    color: var(--background-gradient);
+    background-color: currentColor;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding-right: 4px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.container__guide__favourite::before {
+    content: "";
+    display: block;
+    border-top: 3px solid currentColor;
+    border-left: 3.65px solid transparent;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    filter: brightness(60%);
+}
+
+.container__guide__favourite span {
+    color: var(--white-color);
+}
+
+.container__guide__favourite i {
+    color: var(--white-color);
+    font-size: 0.9rem;
+    margin: 0 3px 0 4px;
+}
+
+.container__guide-view {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+/* TOURS & COMBO */
+.container__tours {
+    /* padding: 60px 24px 0; */
+}
+
+.container__tours-card {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    background-color: var(--white-color);
+    margin-top: 24px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    transition: transform linear 0.1s;
+    will-change: transform;
+}
+
+.container__tours-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.container__tours-img {
+    width: 100%;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    
+}
+
+.container__tours-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--blue-color);
+    line-height: 1.8rem;
+    margin: 10px 10px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+
+.container__tours-achievement {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 0;
+    font-size: 0.9rem;
+}
+
+.container__tours-trip {
+    color: var(--blue-color);
+}
+
+.container__tours-country {
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.container__tours-evaluate {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container__tours-evaluate--number {
+    margin: 10px;
+    font-size: 1.2rem;
+    color: red;
+}
+
+.container__tours__action {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 0;
+}
+
+.container__tours__like {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+i.container__tours__liked-icon {
+    color: #f63d30;
+    display: none;
+}
+
+.container__tours__like-liked .container__tours__unlike-icon {
+    display: none;
+}
+
+.container__tours__like-liked .container__tours__liked-icon {
+    display: inline-block;
+}
+
+.container__tours__rating {
+    font-size: 1rem;
+    transform: scale(0.7);
+    transform-origin: right;
+    color: #d5d5d5;
+    margin-left: auto;
+}
+
+.container__tours__star-gold {
+    color: var(--star-gold-color);
+}
+
+.container__tours__sold {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-left: 6px;
+}

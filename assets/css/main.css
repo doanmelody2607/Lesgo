@@ -217,7 +217,7 @@ i.container__guide__liked-icon {
     position: absolute;
     top: 10px;
     left: -4px;
-    color: var(--primary-color);
+    color: var(--background-gradient);
     background-color: currentColor;
     font-size: 1.2rem;
     font-weight: 500;
