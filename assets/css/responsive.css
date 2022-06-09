@@ -59,6 +59,11 @@
         right: -35px;
         border-width: 5px 6px;
     }
+
+    .travel__trend-title {
+        font-size: 2rem;
+        line-height: 1.4;
+    }
 }
 
 /* TABLET */
@@ -119,6 +124,21 @@
 
     .search__layout.independence {
         height: 150px;
+    }
+
+    .travel__trend-text {
+        max-height: 130px;
+    }
+
+    .travel__trend-desc {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        overflow: hidden;
+        display: block;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
     }
 }
 
@@ -297,5 +317,14 @@
 
     .pagination-item__link {
         min-width: 15px;
+    }
+
+    .travel__trend {
+        display: block;
+    }
+
+    .travel__trend-img,
+    .travel__trend-text {
+        width: 100%;
     }
 }
