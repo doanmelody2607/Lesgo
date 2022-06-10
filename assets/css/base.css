@@ -293,7 +293,7 @@ html {
 .heading-text {
     margin: 0;
     line-height: 2;
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-weight: 800;
     background: linear-gradient(180deg, #2D51CA 0%, #2C82ED 100%);
     -webkit-background-clip: text;
@@ -702,7 +702,7 @@ html {
     width: 6px;
     background: linear-gradient(180deg, #DA0710 0%, #CA0009 100%);
     position: absolute;
-    top: 10px;
+    top: 16px;
     left: 0;
 }
 
@@ -973,4 +973,59 @@ html {
     margin: 10px;
     color: var(--text-color);
     font-size: 1.3rem;
+}
+
+.booking__expand {
+    display: flex;
+}
+
+.booking__expand-symbol {
+    border-width: 8px 9px;
+    border-style: solid;
+    border-color: transparent transparent transparent #267CE8;
+}
+
+.booking__expand-title {
+    margin: 0 0 0 12px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+/* SEARCH LAYOUT INDEPENDENCE */
+.search__layout.independence {
+    height: 200px;
+    background: linear-gradient(180deg, #267CE8 0%, #4E9FFF 100%);
+}
+
+/* TRAVEL TREND */
+.travel__trend {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-shadow: 1px 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.travel__trend-img {
+    width: 30%;
+}
+
+.travel__trend-text {
+    width: 70%;
+    padding: 24px;
+}
+
+.travel__trend-title {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #2C6BDC;
+}
+
+.travel__trend-title:hover {
+    opacity: 0.7;
+}
+
+.travel__trend-desc {
+    font-size: 1.8rem;
+    line-height: 1.6;
 }

@@ -1,11 +1,15 @@
 #app__container {
-    padding: 0 16;
+    padding: 0 16px;
 }
 
 /* CONTAINER POST */
 .container__post-img {
     margin: 24px 0;
     width: 100%;
+}
+
+.container__post-title {
+    font-size: 2.6rem;
 }
 
 .container__post-detail {
