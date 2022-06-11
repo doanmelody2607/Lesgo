@@ -327,4 +327,40 @@
     .travel__trend-text {
         width: 100%;
     }
+
+    /* LOGIN */
+    .login__header {
+        padding: 0;
+    }
+
+    .login__content {
+        padding: 0 12px;
+    }
+
+    .login__heading {
+        font-size: 2rem;
+    }
+
+    .login__body-input {
+        height: 45px;
+        padding: 0 12px;
+        margin-top: 16px;
+    }
+    
+    .login__body-input input,
+    .login__body-input select {
+        flex: 1;
+        outline: none;
+        border: none;
+        height: 45px;
+        font-size: 1.4rem;
+    }
+
+    .login__phone-head {
+        height: 45px;
+    }
+    
+    .login__phone-head select {
+        height: 45px;
+    }
 }

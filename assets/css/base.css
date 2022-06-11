@@ -86,6 +86,10 @@ html {
     animation: growthOfModal linear 0.2s;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .mt-16 {
     margin-top: 16px;
 }
@@ -370,7 +374,7 @@ html {
     position: relative;
     cursor: pointer;
 }
-
+/* 
 .navbar__menu-item a::after {
     content: "";
     display: block;
@@ -380,7 +384,7 @@ html {
     right: -13px;
     top: 10px;
     transform: translateY(-50%);
-}
+} */
 
 .navbar__middle-btn:hover,
 .navbar__menu-item:hover a {
@@ -669,6 +673,16 @@ html {
     text-align: center;
 }
 
+.header__banner2-title {
+    font-size: 7rem;
+}
+
+.header__banner2-desc {
+    font-size: 2rem;
+    line-height: 2;
+    max-width: 500px;
+}
+
 /* APP CONTAINER */
 .container {
     background-color: #fff;
@@ -709,7 +723,7 @@ html {
 
 
 /* APP FOOTER */
-#app_footer {
+#app__footer {
     margin-top: 100px;
     background: linear-gradient(180deg, #267CE8 0%, #4E9FFF 100%);
 }
@@ -1028,4 +1042,224 @@ html {
 .travel__trend-desc {
     font-size: 1.8rem;
     line-height: 1.6;
+}
+
+/* LOGIN & REGISTER */
+.container__background {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    margin: auto;
+    width: 550px;
+    height: 900px;
+    position: relative;
+}
+
+.login__overlay {
+    width: 100%;
+    height: 100%;
+    background: var(--background-gradient);
+    opacity: 0.7;
+}
+
+.login__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0 24px;
+}
+
+.login__header {
+    margin-top: 8px;
+    z-index: 1000;
+    padding: 0 48px;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.login__heading {
+    font-size: 2.4rem;
+}
+
+.login__notify {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.login__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__social-wrapper + .login__social-wrapper {
+    margin-left: 48px;
+}
+
+.login__social-wrapper {
+    text-align: center;
+}
+
+.login__social-name {
+    color: var(--white-color);
+}
+
+.login__separate {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.horizontal__line {
+    width: 150px;
+    height: 1px;
+    background-color: var(--white-color);
+}
+
+.login__separate-text {
+    text-align: center;
+    font-size: 1.4rem;
+    color: var(--white-color);
+}
+
+.login__body-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab__wrapper {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+}
+
+.tab__wrapper:hover {
+    cursor: pointer;
+    background-color: #FF6B00;
+}
+
+.tab__wrapper.focus {
+    background-color: #FF6B00;
+}
+
+.tab__name {
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+
+.login__body-input {
+    width: 100%;
+    height: 50px;
+    background-color: var(--white-color);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0 12px;
+}
+
+.login__body-input input {
+    flex: 1;
+    outline: none;
+    border: none;
+    height: 48px;
+    font-size: 1.6rem;
+}
+
+.login__body-input i {
+    font-size: 2rem;
+    color: #777;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.login__submit {
+    text-align: center;
+}
+
+.login__phone {
+    display: none;
+}
+
+.login__phone-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login__phone-head {
+    width: 90px;
+    height: 50px;
+    background-color: var(--white-color);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.login__phone-head select {
+    outline: none;
+    border: none;
+    width: 90%;
+    height: 48px;
+    font-size: 1.6rem;
+    padding-left: 10px;
+}
+
+.login__phone-number.login__body-input {
+    margin-top: 0;
+    width: 80% !important;
+}
+
+.login__phone-btn {
+    text-align: center;
+}
+
+.login__phone-btn button {
+    width: 100%;
+    background-color: rgba(204, 204, 204, 0.6);
+    color: var(--text-color) !important;
+}
+
+.login__gender-title {
+    font-size: 1.8rem;
+    color: var(--white-color);
+}
+
+.login__gender-choice {
+    display: flex;
+    align-items: center;
+}
+
+.login__gender-choice button:nth-child(2){
+    margin-left: 6px;
+}
+
+.login__policy-text {
+    color: var(--white-color);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.login__policy-text a {
+    color: rgb(220, 179, 84);
+    text-decoration: none;
+}
+
+.login__question {
+    text-align: center;
 }

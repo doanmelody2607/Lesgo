@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="/assets/css/base.css">
-    <link rel="stylesheet" href="./desktop6.css">
+    <link rel="stylesheet" href="./guide-login.css">
     <link rel="stylesheet" href="/assets/css/grid.css">
     <link rel="stylesheet" href="/assets/css/responsive.css">
     <link rel="stylesheet" href="/assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
@@ -19,10 +19,6 @@
     <div id="app">
         <div id="app__header">
             <div id="header__wrapper">
-                <div class="header__banner">
-                    <!-- <img src="/assets/img/LESGO-01-1.png" alt="" class="banner__img"> -->
-                </div>
-
                 <div class="header__navbar">
                     <div class="grid wide">
                         <div id="navbar">
@@ -63,27 +59,7 @@
 
             <div class="search__layout independence">
                 <div class="grid wide">
-                    <div class="seacrh__layout-wrapper">
-                        <div class="navbar__search">
-                            <div class="navbar__search-input-wrap">
-                                <input type="text" class="navbar__search-input" placeholder="Tìm kiếm sản phẩm">
-                                <div class="navbar__search-history">
-                                    <h3 class="navbar__search-history-heading">Lịch sử tìm kiếm</h3>
-                                    <ul class="navbar__search-history-list">
-                                        <li class="navbar__search-history-item">
-                                            <a href="">Kem dưỡng da</a>
-                                        </li>
-                                        <li class="navbar__search-history-item">
-                                            <a href="">Kem trị mụn</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="navbar__search-btn">
-                                <i class="navbar__search-btn-icon fas fa-search"></i>
-                            </div>
-                        </div>
-        
+                    <div class="seacrh__layout-wrapper">        
                         <div class="search__suggest">
                             <p class="search__suggest-text">
                                 Tour
@@ -113,224 +89,101 @@
                     </div>
                 </div>
             </div>
-
-            <div class="header__banner2">
-                <img src="/assets/img/vinhhalong.png" alt="" class="header__banner2-img">
-
-                <div class="header__banner2-cover">
-                    <h1 class="header__banner2-title">Bí kíp du lịch từ Lesgo</h1>
-                    <p class="header__banner2-desc">Khám phá những thành phố và các điểm tham quan hàng đầu ở Việt Nam ! Các điểm du lịch tốt nhất trải dài đất nước Việt.</p>
-                </div>
-            </div>
         </div>
 
         <div id="app__container">
-            <div class="grid wide">
-                <div class="container__route">
-                    <h3 class="container__route-name container__route-arrow">Việt Nam</h3>
-                    <h3 class="container__route-name container__route-arrow">Đà Nẵng</h3>
-                    <h3 class="container__route-name">Vé Cáp Treo Sun World Bà Nà Hills Đà Nẵng</h3>
-                </div>
+            <div class="container__background" style="background-image: url(/assets/img/udara-karunarathna.png);">
+                <div class="login">
+                    <div class="login__overlay"></div>
 
-                <div class="container__post mt-24">
-                    <h3 class="container__post-title heading-text">Cẩm nang du lịch Cung cấp thông tin mới về du lịch</h3>
-
-                    <p class="container__post-detail">
-                        LẠNG SƠN Bản Lân Đặt dường như bị bỏ quên giữa dòng chảy đô thị hóa, con đường duy nhất đến đây băng qua núi rừng hiểm trở khoảng hai tiếng.
-                        <br><br>
-                        Dịp lễ nào cũng vậy, dường như chúng ta đã quá quen thuộc với từ "thất thủ", "đông nghịt", "chen chúc"... Cả năm chỉ có vài dịp gia đình du lịch cùng nhau, những tâm hồn ưa xê dịch như chúng tôi lên kế hoạch về một vùng đất mới, một nơi mà mọi thứ còn nguyên sơ, thuần khiết và đẹp ngỡ như trong cổ tích.
-                    </p>
-                </div>
-
-                <div class="container__content-relative mt-60">
-                    <h3 class="container__heading heading-text">Nội dung liên quan</h3>
-
-                    <div class="row">
-                        <div class="col l-4 m-6 c-12">
-                            <a class="container__news-card" href="">
-                                <div class="container__news-img" style="background-image: url(/assets/img/dao-binh-ba.png);"></div>
-                                <h4 class="container__news-title">Tour Bình Ba trong ngày từ Nha Trang</h4>
-                                <p class="container__news-desc">
-                                    Bạn đang lên kế hoạch cho một chuyến du lịch cùng bạn bè, người thân, gia đình hay đồng nghiệp...
-                                </p>
-                            </a>
+                    <div class="login__content">
+                        <div class="login__header">
+                            <h3 class="login__heading">Đăng nhập hướng dẫn viên</h3>
+                            <p class="login__notify">Tài khoản Lesgo sẽ được đăng nhập bằng số điện thoại hoặc tài khoản bên thứ ba đã đăng ký</p>
                         </div>
-                        <div class="col l-4 m-6 c-12">
-                            <a class="container__news-card" href="">
-                                <div class="container__news-img" style="background-image: url(/assets/img/dalatcoginendidauchoi.png);"></div>
-                                <h4 class="container__news-title">Tour Bình Ba trong ngày từ Nha Trang</h4>
-                                <p class="container__news-desc">
-                                    Bạn đang lên kế hoạch cho một chuyến du lịch cùng bạn bè, người thân, gia đình hay đồng nghiệp...
-                                </p>
+    
+                        <div class="login__social mt-24">
+                            <a href="" class="login__social-wrapper">
+                                <img src="/assets/img/facebook-login.png" alt="" class="login__social-icon">
+                                <p class="login__social-name">Facebook</p>
                             </a>
-                        </div><div class="col l-4 m-6 c-12">
-                            <a class="container__news-card" href="">
-                                <div class="container__news-img" style="background-image: url(/assets/img/1602228835.png);"></div>
-                                <h4 class="container__news-title">Tour Bình Ba trong ngày từ Nha Trang</h4>
-                                <p class="container__news-desc">
-                                    Bạn đang lên kế hoạch cho một chuyến du lịch cùng bạn bè, người thân, gia đình hay đồng nghiệp...
-                                </p>
+                            <a href="" class="login__social-wrapper">
+                                <img src="/assets/img/google-login.png" alt="" class="login__social-icon">
+                                <p class="login__social-name">Google</p>
                             </a>
-                        </div>
-                        <div class="col l-4 m-6 c-12">
-                            <a class="container__news-card" href="">
-                                <div class="container__news-img" style="background-image: url(/assets/img/dao-binh-ba.png);"></div>
-                                <h4 class="container__news-title">Tour Bình Ba trong ngày từ Nha Trang</h4>
-                                <p class="container__news-desc">
-                                    Bạn đang lên kế hoạch cho một chuyến du lịch cùng bạn bè, người thân, gia đình hay đồng nghiệp...
-                                </p>
-                            </a>
-                        </div>
-                        <div class="col l-4 m-6 c-12">
-                            <a class="container__news-card" href="">
-                                <div class="container__news-img" style="background-image: url(/assets/img/dalatcoginendidauchoi.png);"></div>
-                                <h4 class="container__news-title">Tour Bình Ba trong ngày từ Nha Trang</h4>
-                                <p class="container__news-desc">
-                                    Bạn đang lên kế hoạch cho một chuyến du lịch cùng bạn bè, người thân, gia đình hay đồng nghiệp...
-                                </p>
-                            </a>
-                        </div><div class="col l-4 m-6 c-12">
-                            <a class="container__news-card" href="">
-                                <div class="container__news-img" style="background-image: url(/assets/img/1602228835.png);"></div>
-                                <h4 class="container__news-title">Tour Bình Ba trong ngày từ Nha Trang</h4>
-                                <p class="container__news-desc">
-                                    Bạn đang lên kế hoạch cho một chuyến du lịch cùng bạn bè, người thân, gia đình hay đồng nghiệp...
-                                </p>
+                            <a href="" class="login__social-wrapper">
+                                <img src="/assets/img/apple-login.png" alt="" class="login__social-icon">
+                                <p class="login__social-name">Apple</p>
                             </a>
                         </div>
 
-                        <div class="col l-12 m-12 c-12">
-                            <div class="container__guide-btn text-center mt-48">
-                                <button class="btn btn--normal">
-                                    XEM TẤT CẢ
-                                </button>
+                        <div class="login__separate mt-24">
+                            <div class="horizontal__line"></div>
+                            <p class="login__separate-text">Hoặc đăng nhập bằng</p>
+                            <div class="horizontal__line"></div>
+                        </div>
+
+                        <div class="login__body mt-24">
+                            <div class="login__body-tab">
+                                <div class="tab__wrapper mail focus">
+                                    <p class="tab__name">Địa chỉ Email</p>
+                                    <div class="horizontal__line"></div>
+                                </div>
+
+                                <div class="tab__wrapper phone">
+                                    <p class="tab__name">Số điện thoại</p>
+                                    <div class="horizontal__line"></div>
+                                </div>
+                            </div>
+
+                            <div class="login__body-field">
+                                <div class="login__mail">
+                                    <div class="login__body-input">
+                                        <input type="text">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <div class="login__body-input">
+                                        <input type="text">
+                                        <i class="fa fa-eye"></i>
+                                    </div>
+                                    <p class="login__forgot-password">
+                                        <a href="">Quên mật khẩu?</a>
+                                    </p>
+                                </div>
+
+                                <div class="login__phone">
+                                    <div class="login__phone-input mt-16">
+                                        <div class="login__phone-head">
+                                            <select name="" id="" value="vi">
+                                                <option value="vi">+84</option>
+                                            </select>
+                                        </div>
+    
+                                        <div class="login__phone-number login__body-input">
+                                            <input type="text">
+                                            <i class="fa fa-phone"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="login__phone-btn mt-16">
+                                        <button class="btn btn--normal">Gửi mã xác nhận</button>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="container__trend mt-60">
-                    <h3 class="container__heading heading-text">Xu hướng du lịch mới nhất</h3>
+                        <div class="login__submit mt-48">
+                            <button class="btn btn--orange">Đăng nhập</button>
+                        </div>
 
-                    <div class="travel__trend mt-24">
-                        <img src="/assets/img/school.png" alt="" class="travel__trend-img">
-
-                        <div class="travel__trend-text">
-                            <a href="" class="travel__trend-title">Tour Bình Ba Trong Ngày Từ Nha Trang</a>
-                            <p class="travel__trend-desc">Bạn đang lên kế hoạch cho một chuyến du lịch cùng bạn bè, người thân, gia đình hay đồng nghiệp</p>
+                        <div class="login__question">
+                            <p class="login__policy-text">Bạn chưa có tài khoản?
+                                <a href="/pages/guide-register/index.html" class="">Đăng ký ngay</a>
+                            </p>
                         </div>
                     </div>
-
-                    <div class="travel__trend mt-24">
-                        <img src="/assets/img/school.png" alt="" class="travel__trend-img">
-
-                        <div class="travel__trend-text">
-                            <a href="" class="travel__trend-title">Tour Bình Ba Trong Ngày Từ Nha Trang</a>
-                            <p class="travel__trend-desc">Bạn đang lên kế hoạch cho một chuyến du lịch cùng bạn bè, người thân, gia đình hay đồng nghiệp</p>
-                        </div>
-                    </div>
-
-                    <div class="travel__trend mt-24">
-                        <img src="/assets/img/school.png" alt="" class="travel__trend-img">
-
-                        <div class="travel__trend-text">
-                            <a href="" class="travel__trend-title">Tour Bình Ba Trong Ngày Từ Nha Trang</a>
-                            <p class="travel__trend-desc">Bạn đang lên kế hoạch cho một chuyến du lịch cùng bạn bè, người thân, gia đình hay đồng nghiệp</p>
-                        </div>
-                    </div>
-
-                    <div class="travel__trend mt-24">
-                        <img src="/assets/img/school.png" alt="" class="travel__trend-img">
-
-                        <div class="travel__trend-text">
-                            <a href="" class="travel__trend-title">Tour Bình Ba Trong Ngày Từ Nha Trang</a>
-                            <p class="travel__trend-desc">Bạn đang lên kế hoạch cho một chuyến du lịch cùng bạn bè, người thân, gia đình hay đồng nghiệp</p>
-                        </div>
-                    </div>
-
-                    <div class="travel__trend mt-24">
-                        <img src="/assets/img/school.png" alt="" class="travel__trend-img">
-
-                        <div class="travel__trend-text">
-                            <a href="" class="travel__trend-title">Tour Bình Ba Trong Ngày Từ Nha Trang</a>
-                            <p class="travel__trend-desc">Bạn đang lên kế hoạch cho một chuyến du lịch cùng bạn bè, người thân, gia đình hay đồng nghiệp</p>
-                        </div>
-                    </div>
-
-                    <div class="travel__trend mt-24">
-                        <img src="/assets/img/school.png" alt="" class="travel__trend-img">
-
-                        <div class="travel__trend-text">
-                            <a href="" class="travel__trend-title">Tour Bình Ba Trong Ngày Từ Nha Trang</a>
-                            <p class="travel__trend-desc">Bạn đang lên kế hoạch cho một chuyến du lịch cùng bạn bè, người thân, gia đình hay đồng nghiệp</p>
-                        </div>
-                    </div>
-
-                    <div class="travel__trend mt-24">
-                        <img src="/assets/img/school.png" alt="" class="travel__trend-img">
-
-                        <div class="travel__trend-text">
-                            <a href="" class="travel__trend-title">Tour Bình Ba Trong Ngày Từ Nha Trang</a>
-                            <p class="travel__trend-desc">Bạn đang lên kế hoạch cho một chuyến du lịch cùng bạn bè, người thân, gia đình hay đồng nghiệp</p>
-                        </div>
-                    </div>
-
-                    <div class="travel__trend mt-24">
-                        <img src="/assets/img/school.png" alt="" class="travel__trend-img">
-
-                        <div class="travel__trend-text">
-                            <a href="" class="travel__trend-title">Tour Bình Ba Trong Ngày Từ Nha Trang</a>
-                            <p class="travel__trend-desc">Bạn đang lên kế hoạch cho một chuyến du lịch cùng bạn bè, người thân, gia đình hay đồng nghiệp</p>
-                        </div>
-                    </div>
-
-                    <div class="text-center mt-48">
-                        <ul class="pagination home-product__pagination">
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
-                                    <i class="pagination-item__icon fas fa-angle-left"></i>
-                                </a>
-                            </li>
-
-                            <li class="pagination-item pagination-item--active">
-                                <a href="" class="pagination-item__link">1</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">2</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">3</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">4</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">5</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">...</a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">14</a>
-                            </li>
-
-                            <li class="pagination-item">
-                                <a href="" class="pagination-item__link">
-                                    <i class="pagination-item__icon fas fa-angle-right"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="container__post mt-60">
-                    <h3 class="container__post-title heading-text">Cẩm nang du lịch Cung cấp thông tin mới về du lịch</h3>
-
-                    <p class="container__post-detail">
-                        LẠNG SƠN Bản Lân Đặt dường như bị bỏ quên giữa dòng chảy đô thị hóa, con đường duy nhất đến đây băng qua núi rừng hiểm trở khoảng hai tiếng.
-                        <br><br>
-                        Dịp lễ nào cũng vậy, dường như chúng ta đã quá quen thuộc với từ "thất thủ", "đông nghịt", "chen chúc"... Cả năm chỉ có vài dịp gia đình du lịch cùng nhau, những tâm hồn ưa xê dịch như chúng tôi lên kế hoạch về một vùng đất mới, một nơi mà mọi thứ còn nguyên sơ, thuần khiết và đẹp ngỡ như trong cổ tích.
-                    </p>
                 </div>
             </div>
         </div>
@@ -511,5 +364,6 @@
         </div>
     </div>
 
+    <script src="/pages/customer-login/customer-login.js"></script>
 </body>
 </html>
